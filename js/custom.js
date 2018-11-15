@@ -33,11 +33,15 @@
           $(this).toggleClass('is-active');
         })
         
-        $(".sidebar-toggle-button").click(function() {
-            $("#sidebar").toggleClass('active1');
+        $(".sidebar-navbar-toggle-button .toggle-button-div").click(function() {
+            // $("#sidebar").toggleClass('active1');
+            $(".sidebar-wrapper").toggleClass('active1');
+            $('#toggle-button').toggle();
+            $('#toggle-closebutton').toggle();
             $(".rightwindow").toggleClass('active2');
           })
           
+        //   $('#toggle-button').show();
          
           
        
@@ -49,15 +53,16 @@
         //         });
         
           
-                $(".menu__list-ul").hover(function() {
-                    $(".list-text").animate({
-                        "left": '170px',
-                        "opacity": '0.5',
-                        "color": 'green'
+                $('.sidebar-list-ul').hover(function() {
+                    $(".sidebar-list-text").animate({
+                        "left": '135px',
+                        // "opacity": '0.5'
                         
                     });
 
                     // $(".list-text").show( "slide", {direction: "left" }, 2000 );
+
+            // $(".sidebar-li-1").css('color','red');
             $(".list-fa-home").css('color','red');
             $(".list-fa-about").css('color','yellow');
             $(".list-fa-contact").css('color','green');
@@ -67,14 +72,15 @@
 
                   }, function () {
 
-                    $(".list-text").animate({
-                        "left": '-150px',
-                        "opacity": '0.5',
+                    $(".sidebar-list-text").animate({
+                        "left": '-125px',
+                        // "opacity": '0.5',
                         "color": 'green'
                         
                     });
-                      $(".list-fa").css('color','white');
-                        $(".list-text").css('color','white');
+/* #4db74d; */
+                      $(".list-fa").css('color','#000');
+                        $(".list-text").css('color','#000');
 
                         });
                   
