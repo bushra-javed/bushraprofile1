@@ -9,11 +9,12 @@
 
 .bg-color {
     padding-bottom: 30px;
-   background-color: RGBA(13, 70, 93, 0.9);
+    background-color: RGBA(13, 70, 93, 0.9);
     /* background-color: red; */
     min-height: 60px;
     padding-left: -30px !important;
 }
+
 .c {
     clear: both;
 }
@@ -44,15 +45,18 @@ a {
 a {
     text-decoration: none;
 }
+
 h1 {
     /* text-align: center; */
     font-size: 5.8vmin;
     font-size: calc(20px + 1.5vh);
 }
+
 h2 {
 
     font-size: 5.2vmin;
 }
+
 h3 {
 
     font-size: 4.3vmin;
@@ -62,6 +66,7 @@ h4 {
 
     font-size: 4.0vmin;
 }
+
 h5 {
 
     font-size: 3.6vmin;
@@ -96,41 +101,41 @@ ul li {
 
 
 header {
-    
+
 
     .bg-color-header {
-        
-        
+
+
         @extend .bg-color;
-        
+
         .navbar-default {
             margin: 0;
             padding: 0;
-            
+
             .navbar-nav {
                 li.active {
                     a {
                         color: #fff;
                         text-transform: uppercase;
                         background-color: rgba(12, 184, 182, 0.21);
-                        
+
                         &:hover {
-                            
+
                             color: $main-orange;
                         }
-                        
+
                         &:focus {
                             color: $main-orange;
-                            
+
                         }
                     }
-                    
+
                 }
-                
-                
+
+
                 li {
                     a {
-                        
+
                         color: #fff;
                         /* border:1px solid red; */
                         text-transform: uppercase;
@@ -141,14 +146,14 @@ header {
                         margin-right: 25px;
                         font-weight: 300;
                         padding-top: 10px;
-                        
+
                         &:hover {
                             color: $main-orange;
                             background-color: rgba(12, 184, 182, 0.21);
                             border-bottom: 3px solid $main-orange;
-                            
+
                         }
-                        
+
                         &:focus {
                             color: $main-orange;
                             background-color: rgba(12, 184, 182, 0.21);
@@ -156,24 +161,24 @@ header {
                             /* border-left: none; */
                             /* border-right: none; */
                             border-bottom: 3px solid $main-orange;
-                            
+
                         }
                     }
-                    
+
                 }
-                
+
             }
         }
     }
-    
+
 }
-    
-    // .navbar-default .navbar-nav > .active > a:focus, 
-    // .navbar-default .navbar-nav > .active > a:hover {
-        
-        // }
-        // .navbar-default {
-            //     .navbar-nav {
+
+// .navbar-default .navbar-nav > .active > a:focus, 
+// .navbar-default .navbar-nav > .active > a:hover {
+
+// }
+// .navbar-default {
+//     .navbar-nav {
 
 //         li {
 //             a {
@@ -452,8 +457,8 @@ nav {
     // }
 
     .navbar-default {
-//        background-color: RGBA(13, 70, 93, 0.9);
-    
+        //        background-color: RGBA(13, 70, 93, 0.9);
+
     }
 }
 
@@ -470,96 +475,99 @@ banner
 *************************************************************************************************************/
 
 
-section#banner.rightwindow{
+section#banner.rightwindow {
     background: url("../images/banner-large.png") repeat;
     background-size: contain;
     margin-top: 0px;
     text-align: center;
-    .banner-bg-color{
-        @extend .bg-color;
-          .banner-content 
-            {
-                padding-top: 500px;
-                text-align: center;
-                display: inline-block;
-                background-color: rgba(255, 255, 255, .91);
-                color: red;
-                margin-top: 50px;
-                margin-bottom: 50px;
-                text-align: center;
-                // border: 1px solid $main-orange;
-                color: #000;
-                padding: 20px;
-                
-                
-                .banner-content-inner {
-                    border: 2px dotted #000;
-                    padding: 20px;
-                
-                    .banner-text {
-                        //  font-family: 'Chewy', cursive; 
-                        font-size: 28px;
-                   
-                        h1 {
-                            margin: 0px;
-                        
-                        }
-                   
-                        .bushra {
-                            color: #ff8a00;
-                            color: $main-orange;
-                        
-                        
-                            font-size: 50px;
-                            line-height: 80px;
-                            font-weight: 600;
-                            text-transform: uppercase;
-                            padding: 30px 0 35px;
-                            text-transform: uppercase;
-                        }
-                        .btn-appoint
-                        {
 
-                            margin-top: 30px;
-                            padding: 10px 20px;
-                            font-size: 19px;
-                            background-color: $main-orange;
-                            border-radius: 3px;
-                            color: #fff;
-                            &:hover,
-                            &:focus {
-                                box-shadow: 4px 4px 10px #444444;
-                                color: $main-green;
-                            
-                            }    
-                        }
-                        
+    .banner-bg-color {
+        @extend .bg-color;
+
+        .banner-content {
+            padding-top: 500px;
+            text-align: center;
+            display: inline-block;
+            background-color: rgba(255, 255, 255, .91);
+            color: red;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+            // border: 1px solid $main-orange;
+            color: #000;
+            padding: 20px;
+
+
+            .banner-content-inner {
+                border: 2px dotted #000;
+                padding: 20px;
+
+                .banner-text {
+                    //  font-family: 'Chewy', cursive; 
+                    font-size: 28px;
+
+                    h1 {
+                        margin: 0px;
+
                     }
+
+                    .bushra {
+                        color: #ff8a00;
+                        color: $main-orange;
+
+
+                        font-size: 50px;
+                        line-height: 80px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        padding: 30px 0 35px;
+                        text-transform: uppercase;
+                    }
+
+                    .btn-appoint {
+
+                        margin-top: 30px;
+                        padding: 10px 20px;
+                        font-size: 19px;
+                        background-color: $main-orange;
+                        border-radius: 3px;
+                        color: #fff;
+
+                        &:hover,
+                        &:focus {
+                            box-shadow: 4px 4px 10px #444444;
+                            color: $main-green;
+
+                        }
+                    }
+
                 }
-                
-                // img {
-                //     width: 200px;
-                //     height: 200px;
-                //     box-shadow: 5px 5px 15px #444444;
-                //     border-radius: 50%;
-                // }
-                
-                
             }
-            
-            ul.logo li {
-                display: inline;
-                padding: 40px;
-                margin: auto;
-                
-            }
-            .arrow-center-down a i {
-                text-align: center;
-                font-size: 48px;
-                color: #fff;
-            }
+
+            // img {
+            //     width: 200px;
+            //     height: 200px;
+            //     box-shadow: 5px 5px 15px #444444;
+            //     border-radius: 50%;
+            // }
+
+
+        }
+
+        ul.logo li {
+            display: inline;
+            padding: 40px;
+            margin: auto;
+
+        }
+
+        .arrow-center-down a i {
+            text-align: center;
+            font-size: 48px;
+            color: #fff;
+        }
     }
-}    
+}
 
 
 
@@ -580,7 +588,7 @@ section#banner.rightwindow{
 /* ---------------------personal skills--------------------------- */
 
 section#personal-skill.rightwindow {
-    .personal-skill{
+    .personal-skill {
 
         background-color: #122225;
         /* border:11px solid green; */
@@ -590,15 +598,17 @@ section#personal-skill.rightwindow {
         padding: 30px;
         /* width: 100%; */
         transition: all .3s linear;
+
         .personal-skill-body {
             padding-top: 30px;
-i{
-    padding-bottom: 20px;
-}
+
+            i {
+                padding-bottom: 20px;
+            }
         }
     }
 }
-    
+
 
 /**********************************  portfolio **********************************************/
 .portfolio-bg-color {
