@@ -70,4 +70,4 @@ gulp.task('serve', ['sass','copyHtml'], function() {
 });
 
 // Default Task
-gulp.task('default', ['serve', 'sass','copyHtml','imageMin']);
+gulp.task('default', ['serve', 'sass', 'minify','copyHtml','imageMin']);
