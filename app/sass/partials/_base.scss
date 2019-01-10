@@ -2,3 +2,70 @@ body {
     font-family: Lato, sans-serif;
     color: #122225;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+
+.button-class {
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 20px;
+    background-color: $main-orange;
+    border-radius: 5px;
+    font-size: 2.9vmin !important;
+    box-shadow: 0 17px 10px -10px rgba(0, 0, 0, .4);
+    transition: all ease-in-out 300ms;
+    &:hover{
+    box-shadow: 0 17px 40px -10px rgba(0, 0, 0, .4);
+    }
+
+
+
+}
+
+
+.circle-for-icon {
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding-top: 6px;
+    background: #0cb8b6;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+
+.rectangle-with-traingle {
+    margin-left: 140px;
+    background: #fff;
+    padding: 14px 24px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.18);
+    position: relative;
+    width: 200px;
+    height: 400px;
+}
+
+.rectangle-with-traingle::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-left: 0;
+    bottom: -40px;
+    left: 56px;
+    border-top-color: #fff;
+    border-width: 20px;
+}
+
