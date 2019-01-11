@@ -1,3 +1,37 @@
+
+.h1,h1{
+    font-size: $h1-font;}
+    
+.h2,h2{
+    font-size: $h2-font;}
+    
+.h3,h3{
+    font-size: $h3-font;}
+    
+.h4,h4{
+    font-size: $h4-font;}
+    
+.h5,h5{
+    font-size: $h5-font;}
+    
+.h6,h6{
+    font-size: $h6-font;}
+    
+
+p{
+    font-size: p-font;}
+
+    
+a{
+    font-size: $a-font;}
+    
+li{
+    font-size: $li-font;}
+ 
+i{
+    font-size: $i-font;}
+ 
+    
 body {
     font-family: Lato, sans-serif;
     color: #122225;
@@ -11,14 +45,16 @@ a {
     text-decoration: none;
 }
 
-
+ul {
+list-style: none;
+}
 .button-class {
     text-transform: uppercase;
     display: block;
-    padding: 10px 20px;
+    padding: 5px 20px;
     background-color: $main-orange;
     border-radius: 5px;
-    font-size: 2.9vmin !important;
+    // font-size: 2.9vmin !important;
     box-shadow: 0 17px 10px -10px rgba(0, 0, 0, .4);
     transition: all ease-in-out 300ms;
     &:hover{
@@ -31,13 +67,13 @@ a {
 
 
 .circle-for-icon {
-    float: left;
-    width: 40px;
-    height: 40px;
-    padding-top: 6px;
+    width:6vmin;
+    height:6vmin;
+    font-size: $i-font;
     background: #0cb8b6;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
+    line-height:6vmin;
     border-radius: 50%;
     color: #fff;
     text-align: center;
@@ -67,5 +103,13 @@ a {
     left: 56px;
     border-top-color: #fff;
     border-width: 20px;
+}
+
+.bg-color {
+    padding-bottom: 30px;
+    background-color: RGBA(13, 70, 93, 0.9);
+    /* background-color: red; */
+    min-height: 60px;
+    padding-left: -30px !important;
 }
 
