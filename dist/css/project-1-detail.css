@@ -44,14 +44,15 @@ ul {
 
 .button-class, section#project-header .project-header-bg-color .project-header-text a {
   text-transform: uppercase;
-  display: block;
   padding: 5px 20px;
   background-color: #EA6045;
   border-radius: 5px;
-  box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
   transition: all ease-in-out 300ms; }
   .button-class:hover, section#project-header .project-header-bg-color .project-header-text a:hover {
-    box-shadow: 0 17px 40px -10px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 17px 40px -10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
+    color: #1c4a5a;
+    font-weight: 400; }
 
 .circle-for-icon, section#project-detail div#project-description .project-detail ul li a i {
   width: 6vmin;

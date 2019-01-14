@@ -1,13 +1,20 @@
+@import "./plugins/plugin-dir";
 @import "./partials/variables";
 @import "./partials/base";
+@import "./partials/modules";
+
+
+
+
 // @import "./partials/layouts";
 // @import "./partials/functions";
-
 /* button deail */
-
-
 // general css class can be used as required
-.rectangle-for-wiht-traingle-wrapper{
+
+
+
+
+.rectangle-for-wiht-traingle-wrapper {
     background-color: #444444;
     padding: 40px;
 }
@@ -15,7 +22,6 @@
 .rightwindow {
     width: 100%;
     transition: all .5s linear;
-
 }
 
 .rightwindow.active2 {
@@ -26,15 +32,9 @@
 }
 
 
-
-
 .c {
     clear: both;
 }
-
-
-
-
 
 .fancy-shadow-narrow::before {
     content: '';
@@ -50,8 +50,6 @@
 
 
 header {
-
-
     .bg-color-header {
 
 
@@ -336,15 +334,12 @@ section#banner.rightwindow {
 
         .banner-content {
             padding-top: 500px;
-            text-align: center;
+            // text-align: center;
             display: inline-block;
             background-color: rgba(255, 255, 255, .91);
-            color: red;
             margin-top: 50px;
             margin-bottom: 50px;
-            text-align: center;
-            // border: 1px solid $main-orange;
-            color: #000;
+            // text-align: center;
             padding: 20px;
 
 
@@ -375,20 +370,10 @@ section#banner.rightwindow {
                     }
 
                     .btn-appoint {
-
-                        margin-top: 30px;
                         padding: 10px 20px;
-                        font-size: 19px;
-                        background-color: $main-orange;
-                        border-radius: 3px;
                         color: #fff;
+                        @extend .button-class;
 
-                        &:hover,
-                        &:focus {
-                            box-shadow: 4px 4px 10px #444444;
-                            color: $main-green;
-
-                        }
                     }
 
                 }
@@ -491,11 +476,7 @@ section.portfolio.rightwindow {
 
 
             .col-div {
-                /*padding: 0 !important;*/
-                /*width: 400px !important;*/
-                /* height: 800px; */
                 border: 1px solid gray;
-                /* margin-bottom: 10px !important; */
             }
 
 
@@ -508,49 +489,37 @@ section.portfolio.rightwindow {
                 /*margin-top:-20px;*/
                 /* border: 1px solid #777; */
                 color: #fff;
-                background-color: #EA6045;
+                // background-color:red;
+                @extend .bg-color;
                 transition: all 500ms ease;
-                -webkit-box-shadow: 0 10px 6px -6px #777;
-                -moz-box-shadow: 0 30px 6px -6px #777;
-                box-shadow: 0 17px 10px -10px #777;
-                /*color:#fff;*/
-                /*background-color:royalblue;*/
-                /*background-color:royalblue;*/
-            }
-
-            .portfolio-detail-center:hover {
-                /*margin-top:-40px;*/
-                -webkit-box-shadow: 0 10px 6px -6px #777;
-                -moz-box-shadow: 0 10px 6px -6px #777;
-                box-shadow: 0 30px 6px -76px #777;
-            }
-
-            .portfolio-detail-center {
                 text-align: justify;
+
+                &:hover {
+
+                    /*margin-top:-40px;*/
+                    -webkit-box-shadow: 0 10px 6px -6px #777;
+                    -moz-box-shadow: 0 10px 6px -6px #777;
+                    box-shadow: 0 30px 6px -76px #777;
+
+                }
             }
+
 
 
 
             .portfolio-detail-1 {
                 position: relative;
-                /*text-align: center;*/
-                /*overflow:hidden;*/
 
             }
 
             .portfolio-detail-1 .img-div1 {
                 width: 100%;
                 height: 100%;
-                /* border: 2px solid red; */
             }
 
             .portfolio-detail-1 img {
                 width: 100%;
                 height: 400px;
-                /* margin-top: 20%; */
-                /* -webkit-box-shadow: 0 10px 6px -6px #777; */
-                /* -moz-box-shadow: 0 10px 6px -6px #777; */
-                /*box-shadow: 0 10px 6px -6px #777;*/
             }
 
             .div-wrapper {
@@ -566,19 +535,15 @@ section.portfolio.rightwindow {
                 width: 100%;
                 position: absolute;
                 height: 100%;
-                /*  this is for innner content to make in center */
                 display: none;
-                /*  */
                 top: 0;
                 left: 0;
                 color: #fff;
                 border: 2px solid #fff;
-                background-color: rgb(28, 75, 90);
-                background-color: #EA6045;
+                background-color: $main-orange;
 
-            }
-
-            .portfolio-text-div1 {
+                text-align: center;
+                padding: 10%;
 
                 // line-height: 300px;
                 div {
@@ -586,49 +551,28 @@ section.portfolio.rightwindow {
                     vertical-align: middle;
 
                     .portfolio-all-button {
+                        @extend .button-class;
                         text-transform: uppercase;
-                        display: block;
                         padding: 10px 50px;
-                        /*border-radius: 0 !important;*/
-                        /* font-weight: 700; */
-                        border-radius: 5px;
-                        font-size: 2.9vmin !important;
-                        box-shadow: 5px 5px 10px #444444;
                         transition: all ease-in-out 300ms;
-                        /* background-color: #EA6045; */
                         background-color: rgb(28, 75, 90);
-
                         text-align: center;
-                        color: #fff;
                         margin: auto;
-                        color: #fff;
                         text-decoration: none;
-
                         margin-top: 60px;
 
-                        &:hover {
-                            /* border: 1px solid red; */
-                            box-shadow: 0 17px 10px -10px rgba(0, 0, 0, .4);
-
-
+                        a {
+                            text-decoration: none;
                             color: #fff;
+
                         }
 
-
-
-                        .portfolio-button-a {
-
-                            &:hover {
-                                text-decoration: none;
-                            }
+                        i {
+                            margin-left: 30px;
                         }
-
                     }
                 }
             }
-
-
-
         }
     }
 }
@@ -765,8 +709,8 @@ section.portfolio.rightwindow {
 
 @media (max-width:756px) {
     .personal-skill {
-    
-    // padding:30px;
+
+        // padding:30px;
     }
 
     #banner {
@@ -851,5 +795,3 @@ section.portfolio.rightwindow {
 }
 
 /* media query end here for large screen */
-
-
