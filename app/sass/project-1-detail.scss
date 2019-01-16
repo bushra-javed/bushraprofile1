@@ -1,40 +1,28 @@
 @import "./partials/variables";
 @import "./partials/base";
-
 .navbar-default {
-
     background-color: rgb(28, 75, 90);
-
     box-shadow: 2px 2px 5px #444444;
-
     /* background-color: red; */
     /* min-height: 80px; */
     /* padding-left: -30px !important; */
 }
 
 section#project-banner {
-
     .project-banner {
-        background-color: RGBA(13, 70, 93, 0.5);
-        // background-color: RGBA(13, 70, 93, 0.5);
+        background-color: RGBA(13, 70, 93, 0.5); // background-color: RGBA(13, 70, 93, 0.5);
         color: #fff;
         text-align: center;
         height: 300px;
-
         h1 {
             font-size: $h1-font;
             margin-top: 80px;
         }
-
         h3 {
             font-size: $h3-font;
-
         }
     }
 }
-
-
-
 
 section#project-header {
     padding: 40px;
@@ -45,14 +33,12 @@ section#project-header {
     border-radius: 10px;
     box-shadow: 2px 2px 4px #444444;
     position: relative;
-
     .project-header-bg-color {
         background: url('../images/responsive-img4.jpg') center center;
         width: 100%;
         background-repeat: no-repeat;
         min-height: 420px;
         background-size: contain;
-
         .project-header-text {
             a {
                 @extend .button-class;
@@ -67,94 +53,137 @@ section#project-header {
 }
 
 section#project-detail {
-    .row {
-        border-bottom: 4px solid gray;
-        padding: 10px 0;
-        margin: 20px 0;
-
-        .project-detail-header-title {
-            float: left;
-            color: $main-green;
-
-
-            h2 {
-                margin-top: 10px;
-                text-transform: uppercase;
-                font-weight: 700;
+    @extend .section-margin;
+    @extend .section-padding;
+    @extend .bg-color;
+    background-color:$main-fresh;
+    .project-detail-header-row {
+     border-bottom: 4px solid gray;
+     padding: 10px 0;
+     margin: 20px 0;
+     .project-detail-header-title {
+         float: left;
+         color: $main-brown;
+         h2 {
+             margin-top: 10px;
+             text-transform: uppercase;
+             font-weight: 700;
             }
-
         }
-
         .project-detail-header-icon {
             float: right;
-
             .project-icons {
-                background-color: gray;
+                background-color: $main-brown;
                 display: inline-block;
                 height: 8vmin;
                 width: 8vmin;
-                font-size: 20px;
                 font-size: $i-font;
                 margin: auto;
                 line-height: 8vmin;
                 text-align: center;
+                color:#fff;
             }
         }
-
     }
-
     div#project-description {
-
         h2 {
             text-align: center;
             margin: 20px;
+            font-weight: bold;
         }
-
-        .project-detail {
-            background-color: lightgray;
+        .project-detail-right {
+            background-color:$main-brown; 
             padding: 30px;
+            color:#fff;
             box-sizing: border-box;
             margin-bottom: 20px;
-            box-shadow: 2px 2px 5px #444444;
+            box-shadow: 2px 2px 5px #fff;
+            h3{
+                font-weight: bold;
+                text-align: center;
 
-            ul {
-                li {
-
+            }
+                span.under-line{
                     margin-top: 20px;
 
-                    a {
-                        text-decoration: none;
-                        color: inherit;
-
-                        i {
-                            @extend .circle-for-icon;
-                            background-color: $main-orange;
-                        }
-
+                    &::after{
+                        
+                        @extend .line-under-heading;
+                        background-color: yellow;
+                        // content:"";
+                        // width: 170px;
+                        // background-color: $main-orange;
+                        // margin: auto;
+                        // display: block;
+                        // height: 3px;
                     }
-                }
             }
+            ul {
+                li {
+                    list-style-position: inside; // overflow: hidden;
+                    margin-top: 25px;
+                    span.span-check {
+                        }
+                    span.span-text {
+    
+                    }
+    
+                }
+    
+            }
+    
         }
+        .project-detail-left {
+            background-color:$main-brown; 
+            padding: 30px;
+            color:#fff;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 5px #fff;
+            h3{
+                font-weight: bold;
+                // text-align: center;
+
+            }
+    
+        }
+    
     }
+
 }
 
 // bb
+#project-pages {
+    .project-pages {
+        h1 {
+            font-weight: bold;
+            text-align: center;
+            &::after {
+              position: relative;
 
-.project-page-panel-left,
-.project-page-panel-right {
-    background-color: lightgray;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 30px;
-}
-
-.project-page-panels h1 {
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-    border-bottom: 4px solid #000;
-}
-
-.project-page-panels img {
-    width: 450px;
-    box-shadow: 3px 3px 10px #444444;
+                display: inline-block;
+                width: 13px;
+                color: red;
+                height: 5px;
+            }
+        }
+        .project-page-panels {
+            h1 {
+                padding-bottom: 30px;
+                margin-bottom: 20px;
+                border-bottom: 4px solid #000;
+            }
+            .project-page-panel-left,
+            .project-page-panel-right {
+                background-color: lightgray;
+                box-sizing: border-box;
+                text-align: center;
+                padding: 30px;
+            }
+            img {
+                width: 450px;
+                box-shadow: 3px 3px 10px #444444;
+            }
+        }
+    }
 }
