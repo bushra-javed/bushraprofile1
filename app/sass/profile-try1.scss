@@ -13,7 +13,6 @@
 
 
 
-
 .rectangle-for-wiht-traingle-wrapper {
     background-color: #444444;
     padding: 40px;
@@ -193,7 +192,7 @@ nav {
     .sidebar-navbar-toggle-button,
         {
         @extend .green-background-and-shadow;
-        font-size: 29px;
+        // font-size: 29px;
         padding: 10px;
         color: $main-orange !important;
         height: 65px;
@@ -224,18 +223,17 @@ nav {
     }
 
     .sidebar-wrapper {
-        /* z-index: 999; */
         padding-top: 65px;
         position: fixed;
         width: 20%;
-        // background-color: RGBA(13, 70, 83, 0.78);
+        height: 100%;
         display: none;
 
 
         #sidebar {
             z-index: -1;
             box-sizing: border-box;
-            height: 650px;
+            height: 100%;
             width: 100%;
             background-color: #FFF;
             color: rgba(0, 0, 0, .9);
@@ -255,15 +253,20 @@ nav {
                     text-align: center;
                     border-bottom: 1px solid rgba(100, 100, 100, .3);
                     list-style: none;
-                    font-size: 14px;
-                    height: 50px;
+                    // font-size: 14px;
+                    height: 4rem;
+                    // font-color: .1rem;
                     text-align: center;
                     box-sizing: border-box;
 
                     a {
                         color: gray;
-                        // text-decoration: none;
-                    }
+                        
+                        &:hover{
+                            
+                            text-decoration: none;
+                        }
+                        }
                 }
 
                 li.sidebar-li-1,
@@ -293,6 +296,10 @@ nav {
                     position: absolute;
                     margin-left: -130px;
                     //  display: none;     
+                    font-size: .7rem;
+                    margin-top: .3em;
+                    padding-left: .8em;
+                    text-align: center;
                 }
             }
         }
@@ -349,7 +356,7 @@ section#banner.rightwindow {
 
                 .banner-text {
                     //  font-family: 'Chewy', cursive; 
-                    font-size: 28px;
+                    // font-size: 28px;
 
                     h1 {
                         margin: 0px;
@@ -370,9 +377,9 @@ section#banner.rightwindow {
                     }
 
                     .btn-appoint {
-                        padding: 10px 20px;
-                        color: #fff;
+                        // // padding: 10px 20px;
                         @extend .button-class;
+                        color: #fff;
 
                     }
 
@@ -486,7 +493,6 @@ section.portfolio.rightwindow {
                 overflow: hidden;
                 padding: 20px 10px;
                 color: #fff;
-                // background-color:red;
                 @extend .bg-color;
                 transition: all 500ms ease;
                 text-align: justify;
@@ -499,8 +505,8 @@ section.portfolio.rightwindow {
                 }
 
                 p {
-                    font-size: 2.4vmin;
-                }
+                    font-size: .8rem;
+                               }
             }
 
             .portfolio-detail-1 {
@@ -534,34 +540,29 @@ section.portfolio.rightwindow {
                 left: 0;
                 color: #fff;
                 border: 2px solid #fff;
-                background-color: $main-orange;
+                background-color:$main-orange;
                 text-align: center;
                 padding: 10%;
 
                 div {
-                    overflow: hidden;
+                    // overflow: hidden;
                     display: table-cell;
                     vertical-align: middle;
 
                     .portfolio-all-button {
-                        @extend .button-class;
-                        text-transform: uppercase;
-                        padding: 10px 50px;
-                        transition: all ease-in-out 300ms;
-                        background-color: rgb(28, 75, 90);
-                        text-align: center;
-                        margin: auto;
-                        text-decoration: none;
-                        margin-top: 60px;
-
                         a {
                             text-decoration: none;
                             color: #fff;
                         }
-
+                        
                         i {
-                            margin-left: 30px;
+                            margin-left: .5em;
                         }
+                        @extend .button-class;
+                        background-color: rgb(28, 75, 90);
+                        margin-top: 60px;
+                        
+                        
                     }
                 }
             }
@@ -612,7 +613,7 @@ section#about-bushra {
             text-align: justify;
 
             .about-body-left p {
-                font-size: 2.7vmin !important;
+                // font-size: 2.7vmin !important;
                 padding: 10px;
             }
 
@@ -638,11 +639,11 @@ section#about-bushra {
             li {
                 border-bottom: 1px dotted gray;
                 margin-top: 8px;
-                font-size: 2.3vmin !important;
+                // font-size: 2.3vmin !important;
 
                 h6 {
                     color: $main-orange;
-                    font-size: 2.6vmin;
+                    // font-size: 2.6vmin;
                     font-weight: bold;
                 }
 
@@ -663,6 +664,47 @@ section#about-bushra {
 
 //  about ends here
 
+
+//practice for ui li element
+
+// section.practice-li {
+//     padding: 40px;
+//     main {
+//         width: 80%;
+//         background-color: #333;
+//         margin: 40px;
+//         border-radius: 15px;
+//         padding: 30px;
+//         ul {
+//             position: relative;
+//             margin: 0;
+//             padding: 0;
+//             li {
+//                 span {
+//                     position: absolute;
+//                     width: 30px;
+//                     height: 30px;
+//                     border-radius: 15px;
+//                     background-color: #000;
+//                     margin-right: 20x;
+//                 }
+//                 strong {
+//                     margin-left: 60px;
+//                     display: inline-block;
+//                 }
+//             }
+//             li.shape {
+//                 height: 300px;
+//                 position: relative;
+//                 width: 300px;
+//                 clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+//                 background-image: url("../images/1.png");
+//                 background-color: #325C6A;
+//                 background-size: contain;
+//             }
+//         }
+//     }
+// }
 
 
 
@@ -788,11 +830,8 @@ section#about-bushra {
         
         
         .bottom-footer {
-            /* position: fixed; */
-            // height: 50px;
-            border: #000;
             padding: 5px;
-            color: $main-orange;
+            color: #000;
             font-size: 2vh;
             line-height:40px;
             text-align: center;
@@ -803,3 +842,36 @@ section#about-bushra {
     
 }
 }
+
+
+
+ //media queries for the fonts responsive
+
+ 
+ 
+ @media screen and (min-width:576px){
+
+    // html{
+    //     font-size: 16px;
+    //         }
+            :root{
+                font-size: 16px;
+                    }
+                         }
+
+ @media screen and (min-width:720px){
+
+    :root{
+        font-size: 19px;
+            }
+         }
+        
+         @media screen and (min-width:1000px){
+        
+            :root{
+        font-size: 21px;
+        // color:red;
+            }
+         }
+        
+ 

@@ -1,32 +1,47 @@
-.h1, h1 {
-  font-size: 5.8vmin; }
+:root {
+  font-size: 20px; }
 
-.h2, h2 {
-  font-size: 5.2vmin; }
+.h1,
+h1 {
+  font-size: 1.8rem; }
 
-.h3, h3 {
-  font-size: 4.3vmin; }
+.h2,
+h2 {
+  font-size: 1.6rem; }
 
-.h4, h4 {
-  font-size: 4vmin; }
+.h3,
+h3 {
+  font-size: 1.5rem; }
 
-.h5, h5 {
-  font-size: 3.6vmin; }
+.h4,
+h4 {
+  font-size: 1.4rem; }
 
-.h6, h6 {
-  font-size: 3.2vmin; }
+.h5,
+h5 {
+  font-size: 1.2rem; }
+
+.h6,
+h6 {
+  font-size: 1.1rem; }
 
 p {
-  font-size: 3vmin; }
+  font-size: 1rem; }
 
 a {
-  font-size: 2.8vmin; }
+  font-size: 1rem; }
 
 li {
-  font-size: 2.8vmin; }
+  font-size: 1rem; }
 
 i {
-  font-size: 2vmin; }
+  font-size: 1rem; }
+
+span {
+  font-size: 1rem; }
+
+button {
+  font-size: 1rem; }
 
 body {
   font-family: Lato, sans-serif;
@@ -43,13 +58,17 @@ ul {
   list-style: none; }
 
 .button-class, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint, section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button {
+  font-size: 1rem;
   text-transform: uppercase;
-  padding: 5px 20px;
+  text-align: center;
+  margin: auto;
+  padding: .6em 1.2em;
   background-color: #EA6045;
-  border-radius: 5px;
-  transition: all ease-in-out 300ms; }
-  .button-class:hover, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint:hover, section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button:hover {
-    box-shadow: 0 17px 40px -10px rgba(0, 0, 0, 0.4);
+  border-radius: .19em;
+  box-shadow: 0 4px 4px 1px #444444;
+  transition: all ease-in-out 300ms;
+  text-decoration: none; }
+  .button-class:active, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint:active, section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button:active, .button-class:hover, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint:hover, section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button:hover {
     box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
     color: #1c4a5a;
     font-weight: 400; }
@@ -57,7 +76,7 @@ ul {
 .circle-for-icon {
   width: 6vmin;
   height: 6vmin;
-  font-size: 2vmin;
+  font-size: 1rem;
   background: #0cb8b6;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -199,7 +218,6 @@ header .bg-color-header .navbar-default {
 
 /*-----------------------------------------------------   sidebar menu ---------------------------------- */
 nav .sidebar-navbar-toggle-button {
-  font-size: 29px;
   padding: 10px;
   color: #EA6045 !important;
   height: 65px;
@@ -221,15 +239,15 @@ nav .sidebar-navbar-toggle-button {
     margin-left: 30%; }
 
 nav .sidebar-wrapper {
-  /* z-index: 999; */
   padding-top: 65px;
   position: fixed;
   width: 20%;
+  height: 100%;
   display: none; }
   nav .sidebar-wrapper #sidebar {
     z-index: -1;
     box-sizing: border-box;
-    height: 650px;
+    height: 100%;
     width: 100%;
     background-color: #FFF;
     color: rgba(0, 0, 0, 0.9);
@@ -247,12 +265,13 @@ nav .sidebar-wrapper {
         text-align: center;
         border-bottom: 1px solid rgba(100, 100, 100, 0.3);
         list-style: none;
-        font-size: 14px;
-        height: 50px;
+        height: 4rem;
         text-align: center;
         box-sizing: border-box; }
         nav .sidebar-wrapper #sidebar ul li a {
           color: gray; }
+          nav .sidebar-wrapper #sidebar ul li a:hover {
+            text-decoration: none; }
       nav .sidebar-wrapper #sidebar ul li.sidebar-li-1,
       nav .sidebar-wrapper #sidebar ul li.sidebar-li-3,
       nav .sidebar-wrapper #sidebar ul li.sidebar-li-5 {
@@ -268,7 +287,11 @@ nav .sidebar-wrapper {
         height: 100%; }
       nav .sidebar-wrapper #sidebar ul span.sidebar-list-text {
         position: absolute;
-        margin-left: -130px; }
+        margin-left: -130px;
+        font-size: .7rem;
+        margin-top: .3em;
+        padding-left: .8em;
+        text-align: center; }
 
 nav .sidebar-wrapper.active1 {
   transition: all .4s linear;
@@ -293,22 +316,19 @@ section#banner.rightwindow {
     section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner {
       border: 2px dotted #000;
       padding: 20px; }
-      section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text {
-        font-size: 28px; }
-        section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text h1 {
-          margin: 0px; }
-        section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .bushra {
-          color: #ff8a00;
-          color: #EA6045;
-          font-size: 50px;
-          line-height: 80px;
-          font-weight: 600;
-          text-transform: uppercase;
-          padding: 30px 0 35px;
-          text-transform: uppercase; }
-        section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint {
-          padding: 10px 20px;
-          color: #fff; }
+      section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text h1 {
+        margin: 0px; }
+      section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .bushra {
+        color: #ff8a00;
+        color: #EA6045;
+        font-size: 50px;
+        line-height: 80px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 30px 0 35px;
+        text-transform: uppercase; }
+      section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint {
+        color: #fff; }
   section#banner.rightwindow .banner-bg-color ul.logo li {
     display: inline;
     padding: 40px;
@@ -367,7 +387,7 @@ section.portfolio.rightwindow .portfolio-bg-color {
         -moz-box-shadow: 0 10px 6px -6px #777;
         box-shadow: 0 30px 6px -76px #777; }
       section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-center p {
-        font-size: 2.4vmin; }
+        font-size: .8rem; }
     section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-1 {
       position: relative; }
       section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-1 .img-div1 {
@@ -395,23 +415,16 @@ section.portfolio.rightwindow .portfolio-bg-color {
       text-align: center;
       padding: 10%; }
       section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div {
-        overflow: hidden;
         display: table-cell;
         vertical-align: middle; }
         section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button {
-          text-transform: uppercase;
-          padding: 10px 50px;
-          transition: all ease-in-out 300ms;
           background-color: #1c4b5a;
-          text-align: center;
-          margin: auto;
-          text-decoration: none;
           margin-top: 60px; }
           section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button a {
             text-decoration: none;
             color: #fff; }
           section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button i {
-            margin-left: 30px; }
+            margin-left: .5em; }
 
 /****************************** portfolio end*/
 section#about-bushra {
@@ -430,7 +443,6 @@ section#about-bushra {
   section#about-bushra .about-body .about-body-left {
     text-align: justify; }
     section#about-bushra .about-body .about-body-left .about-body-left p {
-      font-size: 2.7vmin !important;
       padding: 10px; }
     section#about-bushra .about-body .about-body-left img {
       margin-top: 10px;
@@ -444,11 +456,9 @@ section#about-bushra {
     padding: 0 10px; }
     section#about-bushra .about-body .about-body-right ul li {
       border-bottom: 1px dotted gray;
-      margin-top: 8px;
-      font-size: 2.3vmin !important; }
+      margin-top: 8px; }
       section#about-bushra .about-body .about-body-right ul li h6 {
         color: #EA6045;
-        font-size: 2.6vmin;
         font-weight: bold; }
       section#about-bushra .about-body .about-body-right ul li:last-child {
         border-bottom: none; }
@@ -516,11 +526,21 @@ section#about-bushra {
         font-size: 2.8vh;
         text-align: center; }
     #footer-section .container-fluid .footer-banner .bottom-footer {
-      /* position: fixed; */
-      border: #000;
       padding: 5px;
-      color: #EA6045;
+      color: #000;
       font-size: 2vh;
       line-height: 40px;
       text-align: center;
       background-color: #fff; }
+
+@media screen and (min-width: 576px) {
+  :root {
+    font-size: 16px; } }
+
+@media screen and (min-width: 720px) {
+  :root {
+    font-size: 19px; } }
+
+@media screen and (min-width: 1000px) {
+  :root {
+    font-size: 21px; } }

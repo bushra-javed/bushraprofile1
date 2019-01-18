@@ -1,37 +1,66 @@
+.h1,
+h1 {
+    font-size: $h1-font;
+}
 
-.h1,h1{
-    font-size: $h1-font;}
-    
-.h2,h2{
-    font-size: $h2-font;}
-    
-.h3,h3{
-    font-size: $h3-font;}
-    
-.h4,h4{
-    font-size: $h4-font;}
-    
-.h5,h5{
-    font-size: $h5-font;}
-    
-.h6,h6{
-    font-size: $h6-font;}
-    
+.h2,
+h2 {
+    font-size: $h2-font;
+}
 
-p{
-    font-size: $p-font;}
+.h3,
+h3 {
+    font-size: $h3-font;
+}
 
-    
-a{
-    font-size: $a-font;}
-    
-li{
-    font-size: $li-font;}
- 
-i{
-    font-size: $i-font;}
- 
-    
+.h4,
+h4 {
+    font-size: $h4-font;
+}
+
+.h5,
+h5 {
+    font-size: $h5-font;
+}
+
+.h6,
+h6 {
+    font-size: $h6-font;
+}
+
+
+p {
+    font-size: $p-font;
+}
+
+
+a {
+    font-size: $a-font;
+}
+
+li {
+    font-size: $li-font;
+}
+
+i {
+
+
+    font-size: $i-font;
+}
+span {
+
+
+    font-size: $span-font;
+}
+
+button {
+    font-size: $button-font;
+}
+
+// html {
+//     font-size: 20px;
+// }
+
 body {
     font-family: Lato, sans-serif;
     color: #122225;
@@ -41,41 +70,44 @@ body {
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
 
 ul {
-list-style: none;
+    list-style: none;
 }
+
 .button-class {
+    font-size: $button-font;
     text-transform: uppercase;
-    padding: 5px 20px;
+    text-align: center;
+    margin: auto;
+    padding: .6em 1.2em;
     background-color: $main-orange;
-    border-radius: 5px;
-    // box-shadow:0  4px 4px 1px #444444;
+    border-radius: .19em;
+    box-shadow: 0 4px 4px 1px #444444;
     transition: all ease-in-out 300ms;
-    &:hover{
-        box-shadow: 0 17px 40px -10px rgba(0, 0, 0, .4);
+    text-decoration: none;
+
+    &:active,
+    &:hover {
         box-shadow: 0 17px 10px -10px rgba(0, 0, 0, .4);
-    color: $main-green;
-    font-weight: 400;
-
+        color: $main-green;
+        font-weight: 400;
     }
-
-
-
 }
 
 
 .circle-for-icon {
-    width:6vmin;
-    height:6vmin;
+    width: 6vmin;
+    height: 6vmin;
     font-size: $i-font;
     background: #0cb8b6;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    line-height:6vmin;
+    line-height: 6vmin;
     border-radius: 50%;
     color: #fff;
     text-align: center;
@@ -115,20 +147,20 @@ list-style: none;
     padding-left: -30px !important;
 }
 
-.section-margin{
-    margin:30px 0;
+.section-margin {
+    margin: 30px 0;
 }
 
-.section-padding{
-    padding:30px 0;
+.section-padding {
+    padding: 30px 0;
 
 }
 
-.line-under-heading{
-    content:"";
-width: 170px;
-background-color: $main-orange;
-margin: auto;
-display: block;
-height: 3px;
+.line-under-heading {
+    content: "";
+    width: 170px;
+    background-color: $main-orange;
+    margin: auto;
+    display: block;
+    height: 3px;
 }

@@ -1,32 +1,47 @@
-.h1, h1 {
-  font-size: 5.8vmin; }
+:root {
+  font-size: 20px; }
 
-.h2, h2 {
-  font-size: 5.2vmin; }
+.h1,
+h1 {
+  font-size: 1.8rem; }
 
-.h3, h3 {
-  font-size: 4.3vmin; }
+.h2,
+h2 {
+  font-size: 1.6rem; }
 
-.h4, h4 {
-  font-size: 4vmin; }
+.h3,
+h3 {
+  font-size: 1.5rem; }
 
-.h5, h5 {
-  font-size: 3.6vmin; }
+.h4,
+h4 {
+  font-size: 1.4rem; }
 
-.h6, h6 {
-  font-size: 3.2vmin; }
+.h5,
+h5 {
+  font-size: 1.2rem; }
+
+.h6,
+h6 {
+  font-size: 1.1rem; }
 
 p {
-  font-size: 3vmin; }
+  font-size: 1rem; }
 
 a {
-  font-size: 2.8vmin; }
+  font-size: 1rem; }
 
 li {
-  font-size: 2.8vmin; }
+  font-size: 1rem; }
 
 i {
-  font-size: 2vmin; }
+  font-size: 1rem; }
+
+span {
+  font-size: 1rem; }
+
+button {
+  font-size: 1rem; }
 
 body {
   font-family: Lato, sans-serif;
@@ -43,13 +58,17 @@ ul {
   list-style: none; }
 
 .button-class, section#project-header .project-header-bg-color .project-header-text a {
+  font-size: 1rem;
   text-transform: uppercase;
-  padding: 5px 20px;
+  text-align: center;
+  margin: auto;
+  padding: .6em 1.2em;
   background-color: #EA6045;
-  border-radius: 5px;
-  transition: all ease-in-out 300ms; }
-  .button-class:hover, section#project-header .project-header-bg-color .project-header-text a:hover {
-    box-shadow: 0 17px 40px -10px rgba(0, 0, 0, 0.4);
+  border-radius: .19em;
+  box-shadow: 0 4px 4px 1px #444444;
+  transition: all ease-in-out 300ms;
+  text-decoration: none; }
+  .button-class:active, section#project-header .project-header-bg-color .project-header-text a:active, .button-class:hover, section#project-header .project-header-bg-color .project-header-text a:hover {
     box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
     color: #1c4a5a;
     font-weight: 400; }
@@ -57,7 +76,7 @@ ul {
 .circle-for-icon {
   width: 6vmin;
   height: 6vmin;
-  font-size: 2vmin;
+  font-size: 1rem;
   background: #0cb8b6;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -123,10 +142,10 @@ section#project-banner .project-banner {
   text-align: center;
   height: 300px; }
   section#project-banner .project-banner h1 {
-    font-size: 5.8vmin;
+    font-size: 1.8rem;
     margin-top: 80px; }
   section#project-banner .project-banner h3 {
-    font-size: 4.3vmin; }
+    font-size: 1.5rem; }
 
 section#project-header {
   padding: 40px;
@@ -170,7 +189,7 @@ section#project-detail {
         display: inline-block;
         height: 8vmin;
         width: 8vmin;
-        font-size: 2vmin;
+        font-size: 1rem;
         margin: auto;
         line-height: 8vmin;
         text-align: center;
