@@ -12,7 +12,6 @@
 // general css class can be used as required
 
 
-
 .rectangle-for-wiht-traingle-wrapper {
     background-color: #444444;
     padding: 40px;
@@ -193,9 +192,11 @@ nav {
         {
         @extend .green-background-and-shadow;
         // font-size: 29px;
-        padding: 10px;
+        padding-left: 10px;
+        padding-top: 5px;
         color: $main-orange !important;
         height: 65px;
+line-height: 65px;
         z-index: 991;
         position: fixed;
         top: 0;
@@ -212,14 +213,17 @@ nav {
                 display: none;
             }
         }
-
         .sidebar-navbar-brand {
             display: inline;
             margin: 0 auto;
             margin-left: 30%;
+            .bushra-brand {
+                img {
+                    // padding: .1em;
+                    width: 6rem;
+                }
+            }
         }
-
-
     }
 
     .sidebar-wrapper {
@@ -228,7 +232,7 @@ nav {
         width: 20%;
         height: 100%;
         display: none;
-
+z-index: 9;
 
         #sidebar {
             z-index: -1;
@@ -258,22 +262,23 @@ nav {
                     // font-color: .1rem;
                     text-align: center;
                     box-sizing: border-box;
-
+                    
                     a {
                         color: gray;
                         
-                        &:hover{
+                        &:hover {
                             
                             text-decoration: none;
                         }
-                        }
+                    }
                 }
-
+                
                 li.sidebar-li-1,
                 li.sidebar-li-3,
                 li.sidebar-li-5 {
                     border-right: 4px solid $main-orange;
                     color: $main-orange;
+                    text-align: center;
                     /* color:#ea6045;     */
                 }
 
@@ -298,8 +303,15 @@ nav {
                     //  display: none;     
                     font-size: .7rem;
                     margin-top: .3em;
-                    padding-left: .8em;
-                    text-align: center;
+                    padding-left: .5em;
+                // border: 1px solid red;
+
+                }
+                
+
+                li span.portfolio-span{
+                    padding-left: 0;
+
                 }
             }
         }
@@ -453,8 +465,8 @@ section#personal-skill.rightwindow {
 
 
 /**********************************  portfolio **********************************************/
-section.portfolio.rightwindow {
-
+section#portfolio.rightwindow {
+padding-top: 60px;
     .portfolio-bg-color {
         width: 100%;
         padding-top: 30px;
@@ -469,6 +481,20 @@ section.portfolio.rightwindow {
             margin-bottom: 10px;
             /*background-color:ghostwhite;*/
 
+
+            
+    .inner-header {
+        /* border: 3px solid rgba(28,74,90, 0.7); */
+        margin: 20px auto;
+        text-align: center;
+        text-transform: uppercase;
+
+        font-weight: 700;
+
+        &::after {
+            @extend .line-under-heading;
+        }
+    }
             .portfolio-h1 {
                 color: $main-orange;
                 /* gba(12, 184, 182, 0.91); */
@@ -479,7 +505,7 @@ section.portfolio.rightwindow {
 
         .portfolio-detail {
             /* border: 1px solid red; */
-            margin-bottom: 20px !important;
+            // margin-bottom: 120px !important;
 
 
             .col-div {
@@ -489,6 +515,11 @@ section.portfolio.rightwindow {
 
 
             .portfolio-detail-center {
+
+                p::first-letter{
+                    //  color: #000;
+                        font-size: 2em;
+                    }
                 height: 100%;
                 overflow: hidden;
                 padding: 20px 10px;
@@ -506,7 +537,7 @@ section.portfolio.rightwindow {
 
                 p {
                     font-size: .8rem;
-                               }
+                }
             }
 
             .portfolio-detail-1 {
@@ -540,7 +571,7 @@ section.portfolio.rightwindow {
                 left: 0;
                 color: #fff;
                 border: 2px solid #fff;
-                background-color:$main-orange;
+                background-color: $main-orange;
                 text-align: center;
                 padding: 10%;
 
@@ -554,15 +585,16 @@ section.portfolio.rightwindow {
                             text-decoration: none;
                             color: #fff;
                         }
-                        
+
                         i {
                             margin-left: .5em;
                         }
+
                         @extend .button-class;
                         background-color: rgb(28, 75, 90);
-                        margin-top: 60px;
-                        
-                        
+                        margin-top: 2em;
+
+
                     }
                 }
             }
@@ -578,15 +610,17 @@ section.portfolio.rightwindow {
 
 /****************************** portfolio end*/
 
-section#about-bushra {
-    margin-top: 10px;
-    margin-bottom: 40px;
+section#aboutme {
+    margin-bottom: 15px;
+        padding-left: 10px;
+        padding-top: 60px;
 
     .about-header {
         /* border: 3px solid rgba(28,74,90, 0.7); */
-        margin: 20px 0;
+        margin: 20px auto;
         text-align: center;
-
+text-transform: uppercase;
+font-weight: 700;
         &::after {
             @extend .line-under-heading;
         }
@@ -614,19 +648,20 @@ section#about-bushra {
 
             .about-body-left p {
                 // font-size: 2.7vmin !important;
+
+
+                
                 padding: 10px;
+            
+            
+                
             }
 
-            img {
-                margin-top: 10px;
-
-                max-width: 250px;
-                max-height: 250px;
-                margin-right: 20px;
-                margin-left: 20px;
-                box-shadow: 1px 1px 3px #444444;
-
-            }
+            p::first-letter{
+                //  color: #000;
+                    font-size: 2em;
+                }
+            
         }
 
 
@@ -710,7 +745,7 @@ section#about-bushra {
 
 
 @media (max-width:756px) {
-    .personal-skill {}
+    // .personal-skill {}
 
     #banner {
         background: url('../images/banner-small.png') no-repeat fixed;
@@ -786,7 +821,7 @@ section#about-bushra {
         margin: 0px;
         padding: 0px;
 
-        
+
         .footer-banner {
             height: 100px;
 
@@ -798,9 +833,9 @@ section#about-bushra {
                 right: 0;
                 clip-path: polygon(45% 0, 100% 0, 100% 100%, 0% 100%);
                 background-color: $main-fresh;
-                z-index: 9;
+                z-index: 1;
             }
-            
+
             .clip-path-left {
                 position: absolute;
                 color: red;
@@ -809,69 +844,67 @@ section#about-bushra {
                 right: left;
                 clip-path: polygon(0 0, 54% 0, 100% 100%, 0% 100%);
                 background-color: $main-fresh;
-                z-index: 9;
+                z-index: 1;
             }
-            
-        .footer-bgcolor {
 
-            background-color: #325C6A;
-            width: 100%;
-            height: 100%;
-            
-            
-            .footer-detail {
-                padding: 10px 5px 10px 5px;
-                font-size: 2.8vh;
+            .footer-bgcolor {
+
+                background-color: #325C6A;
+                width: 100%;
+                height: 100%;
+
+
+                .footer-detail {
+                    padding: 10px 5px 10px 5px;
+                    font-size: 2.8vh;
+                    text-align: center;
+
+
+                }
+            }
+
+
+            .bottom-footer {
+                padding: 5px;
+                color: #000;
+                font-size: 2vh;
+                line-height: 40px;
                 text-align: center;
-                
-                
+                background-color: #fff;
+            }
         }
+
+
     }
-        
-        
-        .bottom-footer {
-            padding: 5px;
-            color: #000;
-            font-size: 2vh;
-            line-height:40px;
-            text-align: center;
-            background-color: #fff;
-        }
-    }
-    
-    
-}
 }
 
 
 
- //media queries for the fonts responsive
+//media queries for the fonts responsive
 
- 
- 
- @media screen and (min-width:576px){
+
+
+@media screen and (min-width:576px) {
 
     // html{
     //     font-size: 16px;
     //         }
-            :root{
-                font-size: 16px;
-                    }
-                         }
+    :root {
+        font-size: 16px;
+    }
+}
 
- @media screen and (min-width:720px){
+@media screen and (min-width:720px) {
 
-    :root{
+    :root {
         font-size: 19px;
-            }
-         }
-        
-         @media screen and (min-width:1000px){
-        
-            :root{
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+    :root {
         font-size: 21px;
         // color:red;
-            }
-         }
-        
- 
+    }
+}

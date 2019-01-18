@@ -35,7 +35,7 @@ section#project-header {
     position: relative;
     .project-header-bg-color {
         background: url('../images/responsive-img4.jpg') center center;
-        width: 100%;
+        width: 80%;
         background-repeat: no-repeat;
         min-height: 420px;
         background-size: contain;
@@ -44,7 +44,7 @@ section#project-header {
                 @extend .button-class;
                 position: absolute;
                 bottom: 8px;
-                left: 39%;
+                // left: 39%;
                 color: $main-green;
                 text-align: center;
             }

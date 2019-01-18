@@ -69,6 +69,7 @@ body {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -158,9 +159,9 @@ ul {
 
 .line-under-heading {
     content: "";
-    width: 170px;
+    width: 200px;
     background-color: $main-orange;
     margin: auto;
     display: block;
-    height: 3px;
+    height: 5px;
 }

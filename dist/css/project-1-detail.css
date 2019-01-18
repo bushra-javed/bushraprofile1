@@ -49,7 +49,8 @@ body {
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 a {
   text-decoration: none; }
@@ -123,11 +124,11 @@ ul {
 
 .line-under-heading, section#project-detail div#project-description .project-detail-right span.under-line::after {
   content: "";
-  width: 170px;
+  width: 200px;
   background-color: #EA6045;
   margin: auto;
   display: block;
-  height: 3px; }
+  height: 5px; }
 
 .navbar-default {
   background-color: #1c4b5a;
@@ -158,14 +159,13 @@ section#project-header {
   position: relative; }
   section#project-header .project-header-bg-color {
     background: url("../images/responsive-img4.jpg") center center;
-    width: 100%;
+    width: 80%;
     background-repeat: no-repeat;
     min-height: 420px;
     background-size: contain; }
     section#project-header .project-header-bg-color .project-header-text a {
       position: absolute;
       bottom: 8px;
-      left: 39%;
       color: #1c4a5a;
       text-align: center; }
 

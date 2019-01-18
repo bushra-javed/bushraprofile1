@@ -49,7 +49,8 @@ body {
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 a {
   text-decoration: none; }
@@ -57,7 +58,7 @@ a {
 ul {
   list-style: none; }
 
-.button-class, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint, section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button {
+.button-class, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button {
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
@@ -68,7 +69,7 @@ ul {
   box-shadow: 0 4px 4px 1px #444444;
   transition: all ease-in-out 300ms;
   text-decoration: none; }
-  .button-class:active, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint:active, section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button:active, .button-class:hover, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint:hover, section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button:hover {
+  .button-class:active, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint:active, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button:active, .button-class:hover, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint:hover, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button:hover {
     box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
     color: #1c4a5a;
     font-weight: 400; }
@@ -108,7 +109,7 @@ ul {
   border-top-color: #fff;
   border-width: 20px; }
 
-.bg-color, header .bg-color-header, section#banner.rightwindow .banner-bg-color, section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-center {
+.bg-color, header .bg-color-header, section#banner.rightwindow .banner-bg-color, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-center {
   padding-bottom: 30px;
   background-color: RGBA(13, 70, 93, 0.9);
   /* background-color: red; */
@@ -121,13 +122,13 @@ ul {
 .section-padding {
   padding: 30px 0; }
 
-.line-under-heading, section#about-bushra .about-header::after {
+.line-under-heading, section#portfolio.rightwindow .portfolio-bg-color .portfolio-header .inner-header::after, section#aboutme .about-header::after {
   content: "";
-  width: 170px;
+  width: 200px;
   background-color: #EA6045;
   margin: auto;
   display: block;
-  height: 3px; }
+  height: 5px; }
 
 [type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
   border: 1px solid #ccc;
@@ -218,9 +219,11 @@ header .bg-color-header .navbar-default {
 
 /*-----------------------------------------------------   sidebar menu ---------------------------------- */
 nav .sidebar-navbar-toggle-button {
-  padding: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
   color: #EA6045 !important;
   height: 65px;
+  line-height: 65px;
   z-index: 991;
   position: fixed;
   top: 0;
@@ -237,13 +240,16 @@ nav .sidebar-navbar-toggle-button {
     display: inline;
     margin: 0 auto;
     margin-left: 30%; }
+    nav .sidebar-navbar-toggle-button .sidebar-navbar-brand .bushra-brand img {
+      width: 6rem; }
 
 nav .sidebar-wrapper {
   padding-top: 65px;
   position: fixed;
   width: 20%;
   height: 100%;
-  display: none; }
+  display: none;
+  z-index: 9; }
   nav .sidebar-wrapper #sidebar {
     z-index: -1;
     box-sizing: border-box;
@@ -277,6 +283,7 @@ nav .sidebar-wrapper {
       nav .sidebar-wrapper #sidebar ul li.sidebar-li-5 {
         border-right: 4px solid #EA6045;
         color: #EA6045;
+        text-align: center;
         /* color:#ea6045;     */ }
       nav .sidebar-wrapper #sidebar ul li.sidebar-li-2,
       nav .sidebar-wrapper #sidebar ul li.sidebar-li-4,
@@ -290,8 +297,9 @@ nav .sidebar-wrapper {
         margin-left: -130px;
         font-size: .7rem;
         margin-top: .3em;
-        padding-left: .8em;
-        text-align: center; }
+        padding-left: .5em; }
+      nav .sidebar-wrapper #sidebar ul li span.portfolio-span {
+        padding-left: 0; }
 
 nav .sidebar-wrapper.active1 {
   transition: all .4s linear;
@@ -354,113 +362,120 @@ section#personal-skill.rightwindow .personal-skill {
       padding-bottom: 20px; }
 
 /**********************************  portfolio **********************************************/
-section.portfolio.rightwindow .portfolio-bg-color {
-  width: 100%;
-  padding-top: 30px;
-  /* background-color: rgba(0,0,0,.3); */ }
-  section.portfolio.rightwindow .portfolio-bg-color .portfolio-header {
-    color: #122225;
-    text-align: center;
-    text-transform: capitalize;
-    padding: 10px 20px;
-    /*border: 1px solid white;*/
-    margin-bottom: 10px;
-    /*background-color:ghostwhite;*/ }
-    section.portfolio.rightwindow .portfolio-bg-color .portfolio-header .portfolio-h1 {
-      color: #EA6045;
-      /* gba(12, 184, 182, 0.91); */
-      /* margin-top: 10px; */ }
-  section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail {
-    /* border: 1px solid red; */
-    margin-bottom: 20px !important; }
-    section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .col-div {
-      border: 1px solid gray; }
-    section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-center {
-      height: 100%;
-      overflow: hidden;
-      padding: 20px 10px;
-      color: #fff;
-      transition: all 500ms ease;
-      text-align: justify; }
-      section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-center:hover {
-        -webkit-box-shadow: 0 10px 6px -6px #777;
-        -moz-box-shadow: 0 10px 6px -6px #777;
-        box-shadow: 0 30px 6px -76px #777; }
-      section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-center p {
-        font-size: .8rem; }
-    section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-1 {
-      position: relative; }
-      section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-1 .img-div1 {
-        width: 100%;
-        height: 100%; }
-        section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-1 .img-div1 img {
-          width: 100%;
-          height: 400px; }
-    section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .div-wrapper {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 {
-      width: 100%;
-      position: absolute;
-      height: 100%;
-      display: none;
-      top: 0;
-      left: 0;
-      color: #fff;
-      border: 2px solid #fff;
-      background-color: #EA6045;
+section#portfolio.rightwindow {
+  padding-top: 60px; }
+  section#portfolio.rightwindow .portfolio-bg-color {
+    width: 100%;
+    padding-top: 30px;
+    /* background-color: rgba(0,0,0,.3); */ }
+    section#portfolio.rightwindow .portfolio-bg-color .portfolio-header {
+      color: #122225;
       text-align: center;
-      padding: 10%; }
-      section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div {
-        display: table-cell;
-        vertical-align: middle; }
-        section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button {
-          background-color: #1c4b5a;
-          margin-top: 60px; }
-          section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button a {
-            text-decoration: none;
-            color: #fff; }
-          section.portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button i {
-            margin-left: .5em; }
+      text-transform: capitalize;
+      padding: 10px 20px;
+      /*border: 1px solid white;*/
+      margin-bottom: 10px;
+      /*background-color:ghostwhite;*/ }
+      section#portfolio.rightwindow .portfolio-bg-color .portfolio-header .inner-header {
+        /* border: 3px solid rgba(28,74,90, 0.7); */
+        margin: 20px auto;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700; }
+      section#portfolio.rightwindow .portfolio-bg-color .portfolio-header .portfolio-h1 {
+        color: #EA6045;
+        /* gba(12, 184, 182, 0.91); */
+        /* margin-top: 10px; */ }
+    section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail {
+      /* border: 1px solid red; */ }
+      section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .col-div {
+        border: 1px solid gray; }
+      section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-center {
+        height: 100%;
+        overflow: hidden;
+        padding: 20px 10px;
+        color: #fff;
+        transition: all 500ms ease;
+        text-align: justify; }
+        section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-center p::first-letter {
+          font-size: 2em; }
+        section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-center:hover {
+          -webkit-box-shadow: 0 10px 6px -6px #777;
+          -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 30px 6px -76px #777; }
+        section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-center p {
+          font-size: .8rem; }
+      section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-1 {
+        position: relative; }
+        section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-1 .img-div1 {
+          width: 100%;
+          height: 100%; }
+          section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-1 .img-div1 img {
+            width: 100%;
+            height: 400px; }
+      section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .div-wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        display: none;
+        top: 0;
+        left: 0;
+        color: #fff;
+        border: 2px solid #fff;
+        background-color: #EA6045;
+        text-align: center;
+        padding: 10%; }
+        section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div {
+          display: table-cell;
+          vertical-align: middle; }
+          section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button {
+            background-color: #1c4b5a;
+            margin-top: 2em; }
+            section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button a {
+              text-decoration: none;
+              color: #fff; }
+            section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button i {
+              margin-left: .5em; }
 
 /****************************** portfolio end*/
-section#about-bushra {
-  margin-top: 10px;
-  margin-bottom: 40px; }
-  section#about-bushra .about-header {
+section#aboutme {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding-top: 60px; }
+  section#aboutme .about-header {
     /* border: 3px solid rgba(28,74,90, 0.7); */
-    margin: 20px 0;
-    text-align: center; }
-  section#about-bushra .about-body .about-tech-header, section#about-bushra .about-body .about-bio-header {
+    margin: 20px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700; }
+  section#aboutme .about-body .about-tech-header, section#aboutme .about-body .about-bio-header {
     margin-bottom: 30px;
     text-align: center;
     color: #EA6045;
     box-shadow: 1px 1px 3px #444444;
     border-bottom: 3px solid rgba(28, 74, 90, 0.7); }
-  section#about-bushra .about-body .about-body-left {
+  section#aboutme .about-body .about-body-left {
     text-align: justify; }
-    section#about-bushra .about-body .about-body-left .about-body-left p {
+    section#aboutme .about-body .about-body-left .about-body-left p {
       padding: 10px; }
-    section#about-bushra .about-body .about-body-left img {
-      margin-top: 10px;
-      max-width: 250px;
-      max-height: 250px;
-      margin-right: 20px;
-      margin-left: 20px;
-      box-shadow: 1px 1px 3px #444444; }
-  section#about-bushra .about-body .about-body-right ul {
+    section#aboutme .about-body .about-body-left p::first-letter {
+      font-size: 2em; }
+  section#aboutme .about-body .about-body-right ul {
     list-style: none;
     padding: 0 10px; }
-    section#about-bushra .about-body .about-body-right ul li {
+    section#aboutme .about-body .about-body-right ul li {
       border-bottom: 1px dotted gray;
       margin-top: 8px; }
-      section#about-bushra .about-body .about-body-right ul li h6 {
+      section#aboutme .about-body .about-body-right ul li h6 {
         color: #EA6045;
         font-weight: bold; }
-      section#about-bushra .about-body .about-body-right ul li:last-child {
+      section#aboutme .about-body .about-body-right ul li:last-child {
         border-bottom: none; }
 
 @media (max-width: 756px) {
@@ -507,7 +522,7 @@ section#about-bushra {
       right: 0;
       clip-path: polygon(45% 0, 100% 0, 100% 100%, 0% 100%);
       background-color: #ccdfcb;
-      z-index: 9; }
+      z-index: 1; }
     #footer-section .container-fluid .footer-banner .clip-path-left {
       position: absolute;
       color: red;
@@ -516,7 +531,7 @@ section#about-bushra {
       right: left;
       clip-path: polygon(0 0, 54% 0, 100% 100%, 0% 100%);
       background-color: #ccdfcb;
-      z-index: 9; }
+      z-index: 1; }
     #footer-section .container-fluid .footer-banner .footer-bgcolor {
       background-color: #325C6A;
       width: 100%;
