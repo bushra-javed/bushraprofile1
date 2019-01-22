@@ -5,7 +5,9 @@
         
         var hash = this.hash;
         if( hash ) {
-            event.preventDefault();
+           // event.preventDefault();
+
+        //    if you uncomment it than it will make the about.html#section-id not working
             $('html, body').animate({
               scrollTop: $(hash).offset().top
           }, 900, function(){

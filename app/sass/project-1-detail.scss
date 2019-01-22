@@ -10,13 +10,15 @@
 
 section#project-banner {
     .project-banner {
-        background-color: RGBA(13, 70, 93, 0.5); // background-color: RGBA(13, 70, 93, 0.5);
+        background-image:linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+        background-image:linear-gradient(to left ,$main-orange,30%,$main-green); // background-color: RGBA(13, 70, 93, 0.5);
         color: #fff;
         text-align: center;
         height: 300px;
+        width:100%;
         h1 {
+padding-top: 40px;
             font-size: $h1-font;
-            margin-top: 80px;
         }
         h3 {
             font-size: $h3-font;
@@ -25,30 +27,37 @@ section#project-banner {
 }
 
 section#project-header {
-    padding: 40px;
+    // padding: 40px;
     margin: 40px auto;
-    height: 80%;
-    width: 80%;
-    border: 4px solid gray;
-    border-radius: 10px;
+    height: 100vh;
+    width: 80vw;
+    border: 4px solid lightgray;
+    border-radius: .4em;
+    padding-top: 1em;
     box-shadow: 2px 2px 4px #444444;
     position: relative;
     .project-header-bg-color {
-        background: url('../images/responsive-img4.jpg') center center;
-        width: 80%;
-        background-repeat: no-repeat;
-        min-height: 420px;
+        background: url("../images/banner-large.png") repeat;
+        background: url('../images/responsive-img4.jpg') ;
+
+        width: 100%;
         background-size: contain;
+        margin-top: 0px;
+        text-align: center;
+            background-repeat: no-repeat;
+        height: 90% ;
+        background-size: 100% 100%;
+
         .project-header-text {
             a {
                 @extend .button-class;
                 position: absolute;
-                bottom: 8px;
+                bottom: 10px;
                 // left: 39%;
                 color: $main-green;
                 text-align: center;
             }
-        }
+       }
     }
 }
 
@@ -109,6 +118,8 @@ section#project-detail {
                     &::after{
                         
                         @extend .line-under-heading;
+                        // // margin: auto;
+                        // width: 170px;
                         background-color: yellow;
                         // content:"";
                         // width: 170px;

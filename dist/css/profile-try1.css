@@ -339,7 +339,7 @@ section#banner.rightwindow {
         color: #fff; }
   section#banner.rightwindow .banner-bg-color ul.logo li {
     display: inline;
-    padding: 40px;
+    padding: 20px;
     margin: auto; }
   section#banner.rightwindow .banner-bg-color .arrow-center-down a i {
     text-align: center;
@@ -465,7 +465,14 @@ section#aboutme {
     section#aboutme .about-body .about-body-left .about-body-left p {
       padding: 10px; }
     section#aboutme .about-body .about-body-left p::first-letter {
-      font-size: 2em; }
+      color: #EA6045;
+      float: left;
+      font-family: Georgia;
+      font-size: 3rem;
+      line-height: 2.5rem;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-left: 3px; }
   section#aboutme .about-body .about-body-right ul {
     list-style: none;
     padding: 0 10px; }

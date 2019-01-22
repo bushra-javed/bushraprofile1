@@ -410,7 +410,7 @@ section#banner.rightwindow {
 
         ul.logo li {
             display: inline;
-            padding: 40px;
+            padding: 20px;
             margin: auto;
 
         }
@@ -658,8 +658,15 @@ font-weight: 700;
             }
 
             p::first-letter{
-                //  color: #000;
-                    font-size: 2em;
+
+  color:$main-orange;
+  float: left;
+  font-family: Georgia;
+  font-size: 3rem;
+  line-height: 2.5rem;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
                 }
             
         }
