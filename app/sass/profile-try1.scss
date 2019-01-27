@@ -1,6 +1,7 @@
 @import "./plugins/plugin-dir";
 @import "./partials/variables";
 @import "./partials/base";
+@import "./partials/layouts";
 @import "./partials/modules";
 
 
@@ -54,124 +55,14 @@ header {
         @extend .bg-color;
 
         .navbar-default {
-            margin: 0;
-            padding: 0;
 
-            .navbar-nav {
-                li.active {
-                    a {
-                        color: #fff;
-                        text-transform: uppercase;
-                        background-color: rgba(12, 184, 182, 0.21);
-
-                        &:hover {
-
-                            color: $main-orange;
-                        }
-
-                        &:focus {
-                            color: $main-orange;
-
-                        }
-                    }
-
-                }
-
-
-                li {
-                    a {
-
-                        color: #fff;
-                        /* border:1px solid red; */
-                        text-transform: uppercase;
-                        font-size: 14px;
-                        box-sizing: border-box;
-                        height: 60px;
-                        line-height: 40px;
-                        margin-right: 25px;
-                        font-weight: 300;
-                        padding-top: 10px;
-
-                        &:hover {
-                            color: $main-orange;
-                            background-color: rgba(12, 184, 182, 0.21);
-                            border-bottom: 3px solid $main-orange;
-
-                        }
-
-                        &:focus {
-                            color: $main-orange;
-                            background-color: rgba(12, 184, 182, 0.21);
-                            /* border: 1px solid red;    float: left; */
-                            /* border-left: none; */
-                            /* border-right: none; */
-                            border-bottom: 3px solid $main-orange;
-
-                        }
-                    }
-
-                }
-
-            }
+            @extend .navbar-layout-setting;
         }
     }
 
 }
 
-// .navbar-default .navbar-nav > .active > a:focus, 
-// .navbar-default .navbar-nav > .active > a:hover {
 
-// }
-// .navbar-default {
-//     .navbar-nav {
-
-//         li {
-//             a {
-
-//                 color: #fff;
-//                 /* border:1px solid red; */
-//                 text-transform: uppercase;
-//                 font-size: 14px;
-//                 box-sizing: border-box;
-//                 height: 60px;
-//                 line-height: 40px;
-//                 margin-right: 25px;
-//                 font-weight: 300;
-//                 padding-top: 10px;
-//                 &:hover {
-//                     color: $main-orange;
-//                     background-color: rgba(12, 184, 182, 0.21);
-//                     border-bottom: 3px solid $main-orange;
-
-//                 }
-
-//                 &:focus {
-//                     color: $main-orange;
-//                     background-color: rgba(12, 184, 182, 0.21);
-//                     /* border: 1px solid red;    float: left; */
-//                     /* border-left: none; */
-//                     /* border-right: none; */
-//                     border-bottom: 3px solid $main-orange;
-
-//                 }
-//                 }
-
-//         }
-
-//     }
-
-// }
-
-
-
-// .affix {
-//     background-color: #ffffff !important;
-// }
-
-// .affix .navbar-nav>li>a:hover,
-// .affix .navbar-nav>li>a:focus {
-//     background-color: rgba(12, 184, 182, .2) !important;
-// }
 
 .green-background-and-shadow {
     background-color: $bg-color;
@@ -182,6 +73,7 @@ header {
 
 .top-nav-collapse {
     @extend .green-background-and-shadow;
+    background-color: $main-green;
 
 }
 
@@ -196,7 +88,7 @@ nav {
         padding-top: 5px;
         color: $main-orange !important;
         height: 65px;
-line-height: 65px;
+        line-height: 65px;
         z-index: 991;
         position: fixed;
         top: 0;
@@ -213,13 +105,14 @@ line-height: 65px;
                 display: none;
             }
         }
+
         .sidebar-navbar-brand {
             display: inline;
             margin: 0 auto;
             margin-left: 30%;
+
             .bushra-brand {
                 img {
-                    // padding: .1em;
                     width: 6rem;
                 }
             }
@@ -232,7 +125,7 @@ line-height: 65px;
         width: 20%;
         height: 100%;
         display: none;
-z-index: 9;
+        z-index: 9;
 
         #sidebar {
             z-index: -1;
@@ -262,17 +155,17 @@ z-index: 9;
                     // font-color: .1rem;
                     text-align: center;
                     box-sizing: border-box;
-                    
+
                     a {
                         color: gray;
-                        
+
                         &:hover {
-                            
+
                             text-decoration: none;
                         }
                     }
                 }
-                
+
                 li.sidebar-li-1,
                 li.sidebar-li-3,
                 li.sidebar-li-5 {
@@ -304,12 +197,12 @@ z-index: 9;
                     font-size: .7rem;
                     margin-top: .3em;
                     padding-left: .5em;
-                // border: 1px solid red;
+                    // border: 1px solid red;
 
                 }
-                
 
-                li span.portfolio-span{
+
+                li span.portfolio-span {
                     padding-left: 0;
 
                 }
@@ -337,8 +230,8 @@ z-index: 9;
 
 
 
-/********************************************************************************************************
-banner              
+/***************************************************************************************************************************************
+                                            banner              
 *************************************************************************************************************/
 
 
@@ -466,7 +359,8 @@ section#personal-skill.rightwindow {
 
 /**********************************  portfolio **********************************************/
 section#portfolio.rightwindow {
-padding-top: 60px;
+    padding-top: 60px;
+
     .portfolio-bg-color {
         width: 100%;
         padding-top: 30px;
@@ -482,19 +376,20 @@ padding-top: 60px;
             /*background-color:ghostwhite;*/
 
 
-            
-    .inner-header {
-        /* border: 3px solid rgba(28,74,90, 0.7); */
-        margin: 20px auto;
-        text-align: center;
-        text-transform: uppercase;
 
-        font-weight: 700;
+            .inner-header {
+                /* border: 3px solid rgba(28,74,90, 0.7); */
+                margin: 20px auto;
+                text-align: center;
+                text-transform: uppercase;
 
-        &::after {
-            @extend .line-under-heading;
-        }
-    }
+                font-weight: 700;
+
+                &::after {
+                    @extend .line-under-heading;
+                }
+            }
+
             .portfolio-h1 {
                 color: $main-orange;
                 /* gba(12, 184, 182, 0.91); */
@@ -516,10 +411,11 @@ padding-top: 60px;
 
             .portfolio-detail-center {
 
-                p::first-letter{
+                p::first-letter {
                     //  color: #000;
-                        font-size: 2em;
-                    }
+                    font-size: 2em;
+                }
+
                 height: 100%;
                 overflow: hidden;
                 padding: 20px 10px;
@@ -612,15 +508,16 @@ padding-top: 60px;
 
 section#aboutme {
     margin-bottom: 15px;
-        padding-left: 10px;
-        padding-top: 60px;
+    padding-left: 10px;
+    padding-top: 60px;
 
     .about-header {
         /* border: 3px solid rgba(28,74,90, 0.7); */
         margin: 20px auto;
         text-align: center;
-text-transform: uppercase;
-font-weight: 700;
+        text-transform: uppercase;
+        font-weight: 700;
+
         &::after {
             @extend .line-under-heading;
         }
@@ -650,25 +547,25 @@ font-weight: 700;
                 // font-size: 2.7vmin !important;
 
 
-                
+
                 padding: 10px;
-            
-            
-                
+
+
+
             }
 
-            p::first-letter{
+            p::first-letter {
 
-  color:$main-orange;
-  float: left;
-  font-family: Georgia;
-  font-size: 3rem;
-  line-height: 2.5rem;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
-                }
-            
+                color: $main-orange;
+                float: left;
+                font-family: Georgia;
+                font-size: 3rem;
+                line-height: 2.5rem;
+                padding-top: 4px;
+                padding-right: 8px;
+                padding-left: 3px;
+            }
+
         }
 
 
