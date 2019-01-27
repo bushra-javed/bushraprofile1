@@ -5,7 +5,9 @@
         
         var hash = this.hash;
         if( hash ) {
-            event.preventDefault();
+           // event.preventDefault();
+
+        //    if you uncomment it than it will make the about.html#section-id not working
             $('html, body').animate({
               scrollTop: $(hash).offset().top
           }, 900, function(){
@@ -63,22 +65,14 @@
 
             // $(".sidebar-li-1").css('color','red');
             $(".sidebar-li-1 i, .sidebar-li-3 i, .sidebar-li-5 i").css('color','black');
-            $(".sidebar-li-1 span, .sidebar-li-3 span, .sidebar-li-5 span").css({'color':'black',  'padding':'-10px'});
-            // $(".list-fa-about").css('color','yellow');
-            // $(".list-fa-contact").css('color','green');
-            // $(".home").css('color','red');
-            // $(".about").css('color','yellow');
-            // $(".contact").css('color','green');
+            $(".sidebar-li-1 span, .sidebar-li-3 span, .sidebar-li-5 span").css({'color':'black'});
 
                   }, function () {
 
                     $(".sidebar-list-text").animate({
                         "left": '-125px',
-                        // "opacity": '0.5',
-                        "color": 'green'
                         
                     });
-/* #4db74d; */
                       $(".list-fa").css('color','#000');
                         $(".list-text").css('color','#000');
 
