@@ -25,7 +25,7 @@ const uglify=require('gulp-uglify');
 gulp.task('imageMin',()=>
 gulp.src('app/images/*')
 .pipe(imagemin())
-.pipe(gulp.dest('dist/images'))
+.pipe(gulp.dest('docs/images'))
 );
 
 //minify js   
@@ -34,7 +34,7 @@ gulp.src('app/images/*')
 gulp.task('minify',function(){
     gulp.src('app/js/*.js')
    .pipe(uglify())
-   .pipe(gulp.dest('dist/js'));
+   .pipe(gulp.dest('docs/js'));
 });
 
 //compile sass
@@ -42,7 +42,7 @@ gulp.task('sass',function(){
 
 return gulp.src(['app/sass/*.scss'])
         .pipe(sass())
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('docs/css'))
         .pipe(browserSync.stream());
 });
 
@@ -51,7 +51,7 @@ return gulp.src(['app/sass/*.scss'])
 gulp.task('copyHtml',function(){
 
     return gulp.src(['app/*.html'])
-            .pipe(gulp.dest('dist'))
+            .pipe(gulp.dest('docs'))
             .pipe(browserSync.stream());
     });
 
@@ -59,7 +59,7 @@ gulp.task('copyHtml',function(){
 // Watch Sass & Serve
 gulp.task('serve', ['sass','copyHtml'], function() {
     browserSync.init({
-        server: "./dist"  
+        server: "./docs"  
     });
 
     gulp.watch(['app/sass/*.scss'], ['sass']);
