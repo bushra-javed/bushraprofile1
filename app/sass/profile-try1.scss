@@ -5,7 +5,11 @@
 @import "./partials/modules";
 
 
-
+.v-a {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
 // @import "./partials/layouts";
 // @import "./partials/functions";
@@ -80,7 +84,7 @@ header {
 /*-----------------------------------------------------   sidebar menu ---------------------------------- */
 nav {
 
-    .sidebar-navbar-toggle-button,
+    .sidebar-navbar-toggle-button
         {
         @extend .green-background-and-shadow;
         // font-size: 29px;
@@ -450,13 +454,13 @@ section#portfolio.rightwindow {
                 }
             }
 
-            .div-wrapper {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+            // .div-wrapper {
+            //     height: 100%;
+            //     width: 100%;
+            //     // display: flex;
+            //     // align-items: center;
+            //     // justify-content: center;
+            // }
 
             .portfolio-text-div1 {
                 width: 100%;
@@ -467,14 +471,16 @@ section#portfolio.rightwindow {
                 left: 0;
                 color: #fff;
                 border: 2px solid #fff;
-                background-color: $main-orange;
+                background-color:$main-orange;
                 text-align: center;
-                padding: 10%;
+                // padding: 10%;
 
                 div {
-                    // overflow: hidden;
-                    display: table-cell;
-                    vertical-align: middle;
+  
+                    @extend .v-a ;
+                                      // overflow: hidden;
+                    // display: table-cell;
+                    // vertical-align: middle;
 
                     .portfolio-all-button {
                         a {
@@ -808,7 +814,7 @@ section#aboutme {
 @media screen and (min-width:1000px) {
 
     :root {
-        font-size: 21px;
+        font-size: 18px;
         // color:red;
     }
 }

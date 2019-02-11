@@ -184,6 +184,11 @@ button, [type='button'], [type='reset'], [type='submit'] {
   color: white;
   border: solid 1px #cc0000; }
 
+.v-a, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
 /* button deail */
 .rectangle-for-wiht-traingle-wrapper {
   background-color: #444444;
@@ -416,12 +421,6 @@ section#portfolio.rightwindow {
           section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-1 .img-div1 img {
             width: 100%;
             height: 400px; }
-      section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .div-wrapper {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
       section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 {
         width: 100%;
         position: absolute;
@@ -432,19 +431,15 @@ section#portfolio.rightwindow {
         color: #fff;
         border: 2px solid #fff;
         background-color: #EA6045;
-        text-align: center;
-        padding: 10%; }
-        section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div {
-          display: table-cell;
-          vertical-align: middle; }
-          section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button {
-            background-color: #1c4b5a;
-            margin-top: 2em; }
-            section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button a {
-              text-decoration: none;
-              color: #fff; }
-            section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button i {
-              margin-left: .5em; }
+        text-align: center; }
+        section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button {
+          background-color: #1c4b5a;
+          margin-top: 2em; }
+          section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button a {
+            text-decoration: none;
+            color: #fff; }
+          section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button i {
+            margin-left: .5em; }
 
 /****************************** portfolio end*/
 section#aboutme {
@@ -568,4 +563,4 @@ section#aboutme {
 
 @media screen and (min-width: 1000px) {
   :root {
-    font-size: 21px; } }
+    font-size: 18px; } }
