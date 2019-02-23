@@ -72,7 +72,8 @@ ul {
   .button-class:active, section#project-header .project-header-bg-color .project-header-text a:active, .button-class:hover, section#project-header .project-header-bg-color .project-header-text a:hover {
     box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
     color: #1c4a5a;
-    font-weight: 400; }
+    font-weight: 400;
+    cursor: pointer; }
 
 .circle-for-icon {
   width: 6vmin;

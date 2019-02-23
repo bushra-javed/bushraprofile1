@@ -15,7 +15,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="index-repair-bu-bushra.css">
   <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/profile-try1.css">
   <link href="css/resume.css" rel="stylesheet" type="text/css">
+
 
   <title>Resume of Bushra</title>
 </head>
@@ -69,16 +71,146 @@
 
   </section> -->
 
-  <div style="height: 70px;;">
+
+
+  <nav>
+
+      <div class="sidebar-navbar-toggle-button ">
+        <div class="toggle-button-div">
+  
+          <i class="fa fa-bars" id="toggle-button"></i>
+          <i class="fa fa-close" id="toggle-closebutton"></i>
+        </div>
+  
+        <div class="sidebar-navbar-brand">
+  
+          <a class="bushra-brand  text-capitalize" href="index.html">
+            <img src="images/bushra-logo-final-2.png">
+          </a>
+        </div>
+      </div>
+      <div class="sidebar-wrapper">
+        <div id="sidebar">
+          <ul class="sidebar-list-ul">
+            <li class="sidebar-li sidebar-li-1">
+              <a href="#home">
+                <i class="fa fa-home list-fa list-fa-home"> </i>
+                <br>
+                <span class="sidebar-list-text home">
+                  home
+                </span>
+              </a>
+            </li>
+            <li class="sidebar-li sidebar-li-2">
+              <a href="#aboutme">
+                <i class="fa fa-user list-fa list-fa-about"> </i>
+                <br>
+                <span class="sidebar-list-text home">
+                  about me
+                </span>
+              </a>
+            </li>
+  
+            <li class="sidebar-li  sidebar-li-3">
+              <a href="#portfolio">
+                <i class="fa fa-briefcase list-fa list-fa-portfolio"> </i>
+                <br>
+                <span class="sidebar-list-text portfolio-span">
+                  portfolio
+                </span>
+              </a>
+            </li>
+            <li class="sidebar-li  sidebar-li-4">
+              <a href="resume.html">
+                <i class="fa fa-address-book  list-fa list-fa-resume"> </i>
+                <br>
+                <span class="sidebar-list-text resume">
+                  Resume
+                </span>
+              </a>
+            </li>
+  
+            <li class="sidebar-li  sidebar-li-5">
+              <a href="#contact">
+                <i class="fa fa-phone  list-fa list-fa-contact"> </i>
+                <br>
+                <span class="sidebar-list-text contact">
+                  contact
+                </span>
+              </a>
+            </li>
+  
+            <li class="sidebar-li sidebar-bottom">
+  
+              <a href="https://github.com/bushrazafar/">
+  
+                <i class="fa fa-github list-fa "></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- sidebar -->
+      </div>
+    </nav>
+    <!-- top navbar -->
+    <header>
+  
+      <div class="bg-color-header">
+        <nav class="navbar navbar-expand-sm navbar-default  navbar-custom fixed-top navbar-fixed-top1">
+          <div class="container">
+            <a class="navbar-brand  bushra-brand" href="index.html">
+              <img src="images/bushra-logo-final-2.png">
+            </a>
+            <button class="navbar-toggler custom-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <i class="fa fa-bars"></i>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html#home">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#aboutme">ABOUT </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navlink-portfolio" href="index.html#portfolio ">PORTFOLIO</a>
+                </li>
+  
+  
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="resume.html">RESUME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#contact">CONTACT</a>
+                </li>
+  
+              </ul>
+  
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
+  <div style="height: 20px;">
 
   </div>
-  <!-- <div>
-    <div class="row">
-      <div class="col">1</div>
-      <div class="col">2</div>
+  <div class="container">
+
+    
+    <div class="row justify-content-center">
+      <div class="flex-wrapper">
+<a role="button"  class="button-class" href="bushra-resume.pdf" download> download resume </a>
+        
+      
+      </div>
     </div>
-  </div> -->
-  <section class="resume1">
+    </div>
+  <section class="resume1 rightwindow">
     <div class="container">
 
       <div class="header1">
@@ -105,17 +237,18 @@
         </h3>
 
 
+        <!-- 
         <address class="address">
-          63 Mill Road Jersey City NJ 07302 USA
-
-        </address>
+            63 Mill Road Jersey City NJ 07302 USA
+            
+          </address>
         <span class="span-header">
 
           <i class="fa fa-phone">
 
           </i>
           (201)-920-8809
-        </span>
+        </span> -->
         <span class="span-header">
 
           <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -181,9 +314,9 @@
         <p  id="exp">
 
           Creative Frontend Developer with 5 years of experience in developing websites. Well-versed in
-          numerous Markup/ scripting languages including HTML, CSS , JQuery ,
-          JavaScript , Angular.js /Angular 2 . Experience in developing websites for responsive design using
-          twitter Bootstrap and Single page applications (SPA) using angular.js and angular 2. Web development
+          numerous Markup/ scripting languages including HTML, CSS Sass(compass,Bourbon), JQuery ,
+          JavaScript , Angular.js /Angular 2. Using the Gulp to running the tasks for building a website. Experience in developing websites for responsive design using 
+bootstrap.          Single page applications (SPA) using angular.js and angular 2. Web development
           using open-source content management system (CMS) WordPress.
 
           <br>
@@ -315,16 +448,19 @@
         <h1 class="mt-40">
           Front End Developer (Contract)
         </h1>
-        <div class="experience-header clearfix">
-          <h3 class="mt-10">
-            <span class="float-left">
-              MorganIDs
-            </span>
-            <span class="float-date firstname">
-              January 2010 to March 2013
-            </span>
-          </h3>
-        </div>
+        <!-- <div class="experience-header clearfix"> -->
+<div class="flex-wrapper">
+  <h3 class="mt-10">
+    MorganIDs
+  </h3>
+    <span class="firstname">
+      Aug 2014 - May 2016
+    </span>
+
+</div>
+            <!-- <span class="float-left"> -->
+            <!-- </span> -->
+        <!-- </div> -->
         <p>
           Created new HTML landing pages using responsive design. Beginning with PSD files and other outputs
           from the Creative department. Involved in developing the User Interactive web pages in a professional
@@ -338,21 +474,25 @@
 
           Front End Developer (Contract)
         </h1>
-        <h3 class="mt-10 clearfix">
+
+<div class="flex-wrapper">
+
+        <h3 class="mt-10">
 
           Cogilent Solutions Pvt Ltd
-          <span class="float-date firstname">
-
-            February 2008 to November 2009
-          </span>
         </h3>
-        <P class="clearfix">
+          <span class="firstname">
+
+            Dec 2011 - Mar 2014
+          </span>
+          </div>
+        <p class="clearfix">
           Worked independently to complete assigned tasks which included updating web pages and creating
           new pages using existing templates. Developing webpages on new requirement and updated broken
           links, fixed misspellings. Responsible for maintenance of website. Created and acquired content for the
           website. Tested frontend code in multiple browsers to ensure cross-browser compatibility. Consulted
           and implemented UI best practices.
-        </P>
+        </p>
 
       </div>
       <!-- ===================== -->
@@ -417,7 +557,6 @@
         </ul>
 
       </div>
-
       <div class="education mt-30">
         <div class="background-header mb-20">
 
@@ -448,13 +587,13 @@
           Masters of Science (Computer Science)
         </h1>
         <h5>
-          National University of computer and emerging sciences Islamabad 2016.
+          National University of computer and emerging sciences Islamabad.
         </h5>
         <h1>
           Bachelors of Science
         </h1>
         <h5>
-          University of Arid Agriculture Rawalpindi 2003.
+          University of Arid Agriculture Rawalpindi.
         </h5>
 
       </div>
@@ -463,13 +602,17 @@
   </section>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
     crossorigin="anonymous"></script>
-
+    <script src="js/custom.js"></script> 
+    <script src="js/portfolio.js"></script> 
+  
 </body>
 
 </html>
