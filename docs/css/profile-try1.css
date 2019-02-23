@@ -354,6 +354,9 @@ section#banner.rightwindow {
     display: inline;
     padding: 20px;
     margin: auto; }
+    section#banner.rightwindow .banner-bg-color ul.logo li img {
+      width: 4rem;
+      height: 4rem; }
   section#banner.rightwindow .banner-bg-color .arrow-center-down a i {
     text-align: center;
     font-size: 48px;
