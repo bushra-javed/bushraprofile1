@@ -58,7 +58,7 @@ a {
 ul {
   list-style: none; }
 
-.button-class, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button {
+.button-class, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text a.btn-appoint, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button {
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
@@ -69,7 +69,7 @@ ul {
   box-shadow: 0 4px 4px 1px #444444;
   transition: all ease-in-out 300ms;
   text-decoration: none; }
-  .button-class:active, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint:active, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button:active, .button-class:hover, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint:hover, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button:hover {
+  .button-class:active, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text a.btn-appoint:active, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button:active, .button-class:hover, section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text a.btn-appoint:hover, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button:hover {
     box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
     color: #1c4a5a;
     font-weight: 400;
@@ -348,7 +348,7 @@ section#banner.rightwindow {
         text-transform: uppercase;
         padding: 30px 0 35px;
         text-transform: uppercase; }
-      section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text .btn-appoint {
+      section#banner.rightwindow .banner-bg-color .banner-content .banner-content-inner .banner-text a.btn-appoint {
         color: #fff; }
   section#banner.rightwindow .banner-bg-color ul.logo li {
     display: inline;
