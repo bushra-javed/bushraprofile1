@@ -4,15 +4,21 @@
 @import "./partials/layouts";
 @import "./partials/modules";
 
-
-
+.v-a {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
 // @import "./partials/layouts";
 // @import "./partials/functions";
 /* button deail */
 // general css class can be used as required
 
-
+a:hover{
+    text-decoration: none;
+    color:#fff
+}
 .rectangle-for-wiht-traingle-wrapper {
     background-color: #444444;
     padding: 40px;
@@ -25,8 +31,8 @@
 
 .rightwindow.active2 {
     transition: all .4s linear;
-    width: 80%;
-    margin-left: 20%;
+    width: 85%;
+    margin-left: 15%;
     /* border: 1px solid red; */
 }
 
@@ -80,7 +86,7 @@ header {
 /*-----------------------------------------------------   sidebar menu ---------------------------------- */
 nav {
 
-    .sidebar-navbar-toggle-button,
+    .sidebar-navbar-toggle-button
         {
         @extend .green-background-and-shadow;
         // font-size: 29px;
@@ -122,7 +128,7 @@ nav {
     .sidebar-wrapper {
         padding-top: 65px;
         position: fixed;
-        width: 20%;
+        width: 15%;
         height: 100%;
         display: none;
         z-index: 9;
@@ -151,7 +157,7 @@ nav {
                     border-bottom: 1px solid rgba(100, 100, 100, .3);
                     list-style: none;
                     // font-size: 14px;
-                    height: 4rem;
+                    height: 60px;
                     // font-color: .1rem;
                     text-align: center;
                     box-sizing: border-box;
@@ -194,7 +200,7 @@ nav {
                     position: absolute;
                     margin-left: -130px;
                     //  display: none;     
-                    font-size: .7rem;
+                    font-size: 1.9vmin;
                     margin-top: .3em;
                     padding-left: .5em;
                     // border: 1px solid red;
@@ -281,7 +287,7 @@ section#banner.rightwindow {
                         text-transform: uppercase;
                     }
 
-                    .btn-appoint {
+                    a.btn-appoint {
                         // // padding: 10px 20px;
                         @extend .button-class;
                         color: #fff;
@@ -305,6 +311,10 @@ section#banner.rightwindow {
             display: inline;
             padding: 20px;
             margin: auto;
+            img{
+                width: 4rem;
+                height: 4rem;
+            }
 
         }
 
@@ -450,13 +460,13 @@ section#portfolio.rightwindow {
                 }
             }
 
-            .div-wrapper {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+            // .div-wrapper {
+            //     height: 100%;
+            //     width: 100%;
+            //     // display: flex;
+            //     // align-items: center;
+            //     // justify-content: center;
+            // }
 
             .portfolio-text-div1 {
                 width: 100%;
@@ -467,14 +477,16 @@ section#portfolio.rightwindow {
                 left: 0;
                 color: #fff;
                 border: 2px solid #fff;
-                background-color: $main-orange;
+                background-color:$main-orange;
                 text-align: center;
-                padding: 10%;
+                // padding: 10%;
 
                 div {
-                    // overflow: hidden;
-                    display: table-cell;
-                    vertical-align: middle;
+  
+                    @extend .v-a ;
+                                      // overflow: hidden;
+                    // display: table-cell;
+                    // vertical-align: middle;
 
                     .portfolio-all-button {
                         a {
@@ -646,6 +658,67 @@ section#aboutme {
 // }
 
 
+// contact
+
+section#contact {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-top: 60px;
+
+    .contact-header {
+        /* border: 3px solid rgba(28,74,90, 0.7); */
+        margin: 20px auto;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        &::after {
+            @extend .line-under-heading;
+        }
+    }
+
+
+    .contact-body {
+
+
+        .contact-bio-header {
+            margin-bottom: 30px;
+            text-align: center;
+            color: $main-orange;
+            box-shadow: 1px 1px 3px #444444;
+            border-bottom: 3px solid rgba(28, 74, 90, 0.7);
+        }
+  .contact-body-left {
+            text-align: justify;
+
+            .contact-body-left p {
+                // font-size: 2.7vmin !important;
+
+
+
+                padding: 10px;
+
+
+
+            }
+
+            p::first-letter {
+
+                color: $main-orange;
+                float: left;
+                font-family: Georgia;
+                font-size: 3rem;
+                line-height: 2.5rem;
+                padding-top: 4px;
+                padding-right: 8px;
+                padding-left: 3px;
+            }
+
+        }
+
+
+    }
+}
 
 
 @media (max-width:756px) {
@@ -782,13 +855,22 @@ section#aboutme {
     }
 }
 
+@media screen and (max-width:576px) {
+
+    // html{
+    //     font-size: 16px;
+    //         }
+    :root {
+        font-size: 14px;
+    }
+}
 
 
 //media queries for the fonts responsive
 
 
 
-@media screen and (min-width:576px) {
+@media screen and (min-width:577px) {
 
     // html{
     //     font-size: 16px;
@@ -801,14 +883,14 @@ section#aboutme {
 @media screen and (min-width:720px) {
 
     :root {
-        font-size: 19px;
+        font-size: 17px;
     }
 }
 
 @media screen and (min-width:1000px) {
 
     :root {
-        font-size: 21px;
+        font-size: 18px;
         // color:red;
     }
 }
