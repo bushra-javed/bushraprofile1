@@ -94,13 +94,23 @@ i{
 .header1
     {
     text-align: center;
-    }
+   h1{
+    //    border:1px solid red;
+       font-size: 2rem;
+   }
+
+}
 .span-header{
 border-right:1px solid gray; 
 margin-left: 10px;
 margin-right: 5px;
 font-size: 2.9vmin;
+a{
 
+    &:hover{
+ color:#000;       
+    }
+}
 }
 
 .spanlast{
@@ -214,10 +224,8 @@ text-transform: uppercase;
     float: right;
 }
 
-
-// 
-
-/* .right hr{
-    margin-bottom: 0;
-background-color:red;
-} */
+.links{
+    a{
+        color:blue;
+    }
+}
