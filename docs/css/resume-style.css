@@ -7,7 +7,7 @@ a.button-class {
   padding: .6em 1.2em;
   background-color: #EA6045;
   border-radius: .19em;
-  box-shadow: 0 4px 3px  #444444;
+  box-shadow: 0 4px 3px #444444;
   transition: all ease-in-out 300ms;
   text-decoration: none;
   text-decoration: none; }
@@ -17,6 +17,12 @@ a.button-class {
     font-weight: 400; }
   a.button-class:hover {
     text-decoration: none !important; }
+
+.spanlast {
+  border: none; }
+
+span {
+  color: #212529; }
 
 h1 {
   margin: 0;
@@ -86,41 +92,69 @@ i {
   .span-header a:hover {
     color: #000; }
 
-.spanlast {
-  border: none; }
+.background p {
+  text-align: justify; }
 
-span {
-  color: #212529; }
+.technical-skills .technical-skills-detail {
+  margin-left: 40px; }
 
-.mt-10 {
-  margin-top: 10px; }
+.professional-summary {
+  margin-top: 2rem; }
+  .professional-summary .professional-summary-header {
+    margin-bottom: 2rem; }
+  .professional-summary .professional-summary-detail {
+    margin-left: 2rem; }
+    .professional-summary .professional-summary-detail p {
+      text-align: justify; }
 
-.mt-20 {
-  margin-top: 20px; }
+.experience-summary {
+  margin-top: 2rem; }
+  .experience-summary .experience-summary-header {
+    margin-bottom: 2rem; }
+  .experience-summary .experience-summary-detail {
+    margin-top: 2rem;
+    margin-left: 2rem; }
+    .experience-summary .experience-summary-detail ul {
+      list-style: disc; }
 
-.mt-30 {
-  margin-top: 30px; }
+.experience-career {
+  margin-top: 2rem; }
+  .experience-career .experience-career-header {
+    margin-bottom: 2rem; }
+  .experience-career .experience-career-detail {
+    margin-top: 2rem;
+    margin-left: 2rem; }
+    .experience-career .experience-career-detail .exp-ul {
+      list-style: disc; }
 
-.mt-40 {
-  margin-top: 40px; }
+.technical-skills {
+  margin-top: 2rem; }
+  .technical-skills .technical-skills-header {
+    margin-bottom: 2rem; }
+  .technical-skills .technical-skills-detail {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    list-style: disc; }
 
-.mt-50 {
-  margin-top: 50px; }
+.education {
+  margin-top: 2rem; }
+  .education .education-header {
+    margin-bottom: 2rem; }
+  .education .education-detail {
+    margin-top: 2rem;
+    margin-left: 2rem; }
+    .education .education-detail h1 {
+      margin-bottom: 1rem; }
 
-.mb-10 {
-  margin-bottom: 10px; }
-
-.mb-20 {
-  margin-bottom: 20px; }
-
-.mb-30 {
-  margin-bottom: 30px; }
-
-.mb-40 {
-  margin-bottom: 40px; }
-
-.mb-50 {
-  margin-bottom: 50px; }
+.link {
+  margin-top: 2rem; }
+  .link .link-header {
+    margin-bottom: 2rem; }
+  .link .link-detail {
+    margin-top: 2rem;
+    margin-left: 2rem; }
+    .link .link-detail .exp-ul {
+      list-style: disc; }
 
 .flex-wrapper {
   display: flex;
@@ -136,6 +170,10 @@ span {
   margin: 0;
   /* border:1px solid green; */ }
 
+.row .col-12 {
+  padding: 0 !important;
+  margin: 0 !important; }
+
 .col-4 {
   margin: 0;
   padding: 0;
@@ -149,7 +187,7 @@ span {
   box-sizing: border-box; }
 
 .firstname {
-  color: #f94d09;
+  color: #EA6045;
   padding: 0;
   margin: 0;
   height: 100%;
@@ -170,15 +208,17 @@ span {
   text-transform: uppercase;
   text-align: left;
   /* display: inline-block; */
-  /* width: 30%; */
-  /* border-bottom: 1px solid red; */ }
+  /* width: 30%; */ }
 
-.right {
-  /* display: inline-block; */
-  border-bottom: 3px solid #444444;
-  margin-top: -5px;
-  height: 100%;
-  /* box-sizing: border-box; */ }
+.title-border-bottom {
+  border-bottom: 6px double #EA6045;
+  margin: 0;
+  padding: 0; }
+  .title-border-bottom h1 {
+    text-transform: uppercase; }
+
+.experince-summary ul {
+  list-style: disc; }
 
 .float-date {
   float: right; }
