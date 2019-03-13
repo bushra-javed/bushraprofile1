@@ -18,6 +18,12 @@ a.button-class {
   a.button-class:hover {
     text-decoration: none !important; }
 
+.spanlast {
+  border: none; }
+
+span {
+  color: #212529; }
+
 h1 {
   margin: 0;
   padding: 0;
@@ -89,44 +95,66 @@ i {
 .background p {
   text-align: justify; }
 
-.exp p {
-  text-align: justify; }
+.technical-skills .technical-skills-detail {
+  margin-left: 40px; }
 
-.spanlast {
-  border: none; }
+.professional-summary {
+  margin-top: 2rem; }
+  .professional-summary .professional-summary-header {
+    margin-bottom: 2rem; }
+  .professional-summary .professional-summary-detail {
+    margin-left: 2rem; }
+    .professional-summary .professional-summary-detail p {
+      text-align: justify; }
 
-span {
-  color: #212529; }
+.experience-summary {
+  margin-top: 2rem; }
+  .experience-summary .experience-summary-header {
+    margin-bottom: 2rem; }
+  .experience-summary .experience-summary-detail {
+    margin-top: 2rem;
+    margin-left: 2rem; }
+    .experience-summary .experience-summary-detail ul {
+      list-style: disc; }
 
-.mt-10 {
-  margin-top: 10px; }
+.experience-career {
+  margin-top: 2rem; }
+  .experience-career .experience-career-header {
+    margin-bottom: 2rem; }
+  .experience-career .experience-career-detail {
+    margin-top: 2rem;
+    margin-left: 2rem; }
+    .experience-career .experience-career-detail .exp-ul {
+      list-style: disc; }
 
-.mt-20 {
-  margin-top: 20px; }
+.technical-skills {
+  margin-top: 2rem; }
+  .technical-skills .technical-skills-header {
+    margin-bottom: 2rem; }
+  .technical-skills .technical-skills-detail {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    list-style: disc; }
 
-.mt-30 {
-  margin-top: 30px; }
+.education {
+  margin-top: 2rem; }
+  .education .education-header {
+    margin-bottom: 2rem; }
+  .education .education-detail {
+    margin-top: 2rem;
+    margin-left: 2rem; }
+    .education .education-detail h1 {
+      margin-bottom: 1rem; }
 
-.mt-40 {
-  margin-top: 40px; }
-
-.mt-50 {
-  margin-top: 50px; }
-
-.mb-10 {
-  margin-bottom: 10px; }
-
-.mb-20 {
-  margin-bottom: 20px; }
-
-.mb-30 {
-  margin-bottom: 30px; }
-
-.mb-40 {
-  margin-bottom: 40px; }
-
-.mb-50 {
-  margin-bottom: 50px; }
+.link {
+  margin-top: 2rem; }
+  .link .link-header {
+    margin-bottom: 2rem; }
+  .link .link-detail {
+    margin-top: 2rem;
+    margin-left: 2rem; }
+    .link .link-detail .exp-ul {
+      list-style: disc; }
 
 .flex-wrapper {
   display: flex;
