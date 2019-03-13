@@ -122,6 +122,22 @@ i {
     }
 }
 
+
+///@exp
+.background {
+    p {
+        text-align: justify;
+
+
+    }
+}
+
+.exp {
+    p {
+        text-align: justify;
+    }
+}
+
 .spanlast {
     border: none;
 }
@@ -216,7 +232,9 @@ span {
 }
 
 .firstname {
-    color: #f94d09;
+    // color: #f94d09;
+    color: #EA6045;
+
     padding: 0;
     margin: 0;
     height: 100%;
@@ -246,7 +264,7 @@ span {
 
 .title-border-bottom {
 
-    border-bottom: 4px double #f94d09;
+    border-bottom: 6px double #EA6045;
     ;
     margin: 0;
     padding: 0;
