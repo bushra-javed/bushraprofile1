@@ -7,7 +7,7 @@ a.button-class {
   padding: .6em 1.2em;
   background-color: #EA6045;
   border-radius: .19em;
-  box-shadow: 0 4px 3px  #444444;
+  box-shadow: 0 4px 3px #444444;
   transition: all ease-in-out 300ms;
   text-decoration: none;
   text-decoration: none; }
@@ -136,6 +136,10 @@ span {
   margin: 0;
   /* border:1px solid green; */ }
 
+.row .col-12 {
+  padding: 0 !important;
+  margin: 0 !important; }
+
 .col-4 {
   margin: 0;
   padding: 0;
@@ -170,15 +174,17 @@ span {
   text-transform: uppercase;
   text-align: left;
   /* display: inline-block; */
-  /* width: 30%; */
-  /* border-bottom: 1px solid red; */ }
+  /* width: 30%; */ }
 
-.right {
-  /* display: inline-block; */
-  border-bottom: 3px solid #444444;
-  margin-top: -5px;
-  height: 100%;
-  /* box-sizing: border-box; */ }
+.title-border-bottom {
+  border-bottom: 4px double #f94d09;
+  margin: 0;
+  padding: 0; }
+  .title-border-bottom h1 {
+    text-transform: uppercase; }
+
+.experince-summary ul {
+  list-style: disc; }
 
 .float-date {
   float: right; }
