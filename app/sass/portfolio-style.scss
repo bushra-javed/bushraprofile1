@@ -8,17 +8,18 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-  }
+}
 
 // @import "./partials/layouts";
 // @import "./partials/functions";
 /* button deail */
 // general css class can be used as required
 
-a:hover{
+a:hover {
     text-decoration: none;
     // color:#fff
 }
+
 .rectangle-for-wiht-traingle-wrapper {
     background-color: #444444;
     padding: 40px;
@@ -86,8 +87,7 @@ header {
 /*-----------------------------------------------------   sidebar menu ---------------------------------- */
 nav {
 
-    .sidebar-navbar-toggle-button
-        {
+    .sidebar-navbar-toggle-button {
         @extend .green-background-and-shadow;
         // font-size: 29px;
         padding-left: 10px;
@@ -275,10 +275,7 @@ section#banner.rightwindow {
                     }
 
                     .bushra {
-                        color: #ff8a00;
                         color: $main-orange;
-
-
                         font-size: 50px;
                         line-height: 80px;
                         font-weight: 600;
@@ -287,12 +284,18 @@ section#banner.rightwindow {
                         text-transform: uppercase;
                     }
 
-                    a.btn-appoint {
-                        // // padding: 10px 20px;
-                        @extend .button-class;
-                        color: #fff;
+                    a {
 
+                        button {
+                            @extend .button-class;
+                            color: #fff;
+                            font-size: 1.3rem;
+                            font-family: 'Times New Roman', Times, serif;
+                        }
                     }
+
+                    // // padding: 10px 20px;
+
 
                 }
             }
@@ -311,7 +314,8 @@ section#banner.rightwindow {
             display: inline;
             padding: 20px;
             margin: auto;
-            img{
+
+            img {
                 width: 4rem;
                 height: 4rem;
             }
@@ -477,14 +481,14 @@ section#portfolio.rightwindow {
                 left: 0;
                 color: #fff;
                 border: 2px solid #fff;
-                background-color:$main-orange;
+                background-color: $main-orange;
                 text-align: center;
                 // padding: 10%;
 
                 div {
-  
-                    @extend .v-a ;
-                                      // overflow: hidden;
+
+                    @extend .v-a;
+                    // overflow: hidden;
                     // display: table-cell;
                     // vertical-align: middle;
 
@@ -664,55 +668,58 @@ section#contact {
     margin-bottom: 15px;
     padding-left: 10px;
     padding-top: 60px;
-    .contact-background1{
+
+    .contact-background1 {
         height: 420px;
         // background-image: linear-gradient(to top,red 20%, green 20% 40%,yellow 40% 60%, purple 60% 80%,yellow 80% 100%);
         // z-index: -1;
         // background-size: cover;
-            // background-repeat: no-repeat;
-            position: relative;
-            .container-fluid{
-                margin: 0 !important;
-                padding: 0 !important;
-                
-                .contact-bushra{
-                    position: absolute;
-                    top:0;
-                    left: 10%;
-                    width: 80%;
-                    height: 90%;
-                    box-sizing: border-box;
-                    border-radius: 20px;
-                    margin: 1rem;
-                    background-color: #fff;
-                    .contact-header {
-                        /* border: 3px solid rgba(28,74,90, 0.7); */
-                        margin: 20px auto;
-                        text-align: center;
-                        text-transform: uppercase;
-                        font-weight: 700;
-                        
-                        &::after {
-                            @extend .line-under-heading;
-                        }
+        // background-repeat: no-repeat;
+        position: relative;
+
+        .container-fluid {
+            margin: 0 !important;
+            padding: 0 !important;
+
+            .contact-bushra {
+                position: absolute;
+                top: 0;
+                left: 10%;
+                width: 80%;
+                height: 90%;
+                box-sizing: border-box;
+                border-radius: 20px;
+                margin: 1rem;
+                background-color: #fff;
+
+                .contact-header {
+                    /* border: 3px solid rgba(28,74,90, 0.7); */
+                    margin: 20px auto;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-weight: 700;
+
+                    &::after {
+                        @extend .line-under-heading;
                     }
-                    
-                    .contact-bio {
-                        z-index: 999;
-                        background-color: #fff;
-                        margin-bottom: 30px;
-                        // text-align: center;
-                        padding:2rem  3rem;
-                        color: #000;
-                        box-shadow: 1px 1px 3px #444444;
-                        border-bottom: 3px solid rgba(28, 74, 90, 0.7);
-                    }
-                    
                 }
-                
+
+                .contact-bio {
+                    z-index: 999;
+                    background-color: #fff;
+                    margin-bottom: 30px;
+                    // text-align: center;
+                    padding: 2rem 3rem;
+                    color: #000;
+                    box-shadow: 1px 1px 3px #444444;
+                    border-bottom: 3px solid rgba(28, 74, 90, 0.7);
+                }
+
             }
+
         }
     }
+}
 
 
 
@@ -721,7 +728,7 @@ section#contact {
 
 @media (max-width:756px) {
     // .personal-skill {}
-    
+
     #banner {
         background: url('../images/banner-small.png') no-repeat fixed;
     }
