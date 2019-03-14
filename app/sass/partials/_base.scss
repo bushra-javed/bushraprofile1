@@ -81,6 +81,7 @@ ul {
     list-style: none;
 }
 
+
 .button-class {
     font-size: $button-font;
     text-transform: uppercase;
@@ -89,7 +90,7 @@ ul {
     padding: .6em 1.2em;
     background-color: $main-orange;
     border-radius: .19em;
-    box-shadow: 0 4px 4px 1px #444444;
+    box-shadow: 0 4px 4px -1px #333;
     transition: all ease-in-out 300ms;
     text-decoration: none;
 

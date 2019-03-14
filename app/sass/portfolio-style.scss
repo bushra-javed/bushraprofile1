@@ -285,12 +285,12 @@ section#banner.rightwindow {
                     }
 
                     a {
+                        text-decoration: none;
+                        color: #fff;
 
                         button {
                             @extend .button-class;
                             color: #fff;
-                            font-size: 1.3rem;
-                            font-family: 'Times New Roman', Times, serif;
                         }
                     }
 
