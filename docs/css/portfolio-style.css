@@ -123,7 +123,7 @@ ul {
 .section-padding {
   padding: 30px 0; }
 
-.line-under-heading, section#portfolio.rightwindow .portfolio-bg-color .portfolio-header .inner-header::after, section#aboutme .about-header::after, section#contact .contact-background1 .container-fluid .contact-bushra .contact-header::after {
+.line-under-heading, section#portfolio.rightwindow .portfolio-bg-color .portfolio-header .inner-header::after, section#aboutme .about-header::after, section#contact .card-bushra h1::after {
   content: "";
   width: 200px;
   background-color: #EA6045;
@@ -178,7 +178,7 @@ ul {
 [type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
   border: 1px solid #1565c0; }
 
-.v-a, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div {
+.v-a, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div, section#contact .card-bushra div {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
@@ -193,10 +193,10 @@ a:hover {
 
 .rightwindow {
   width: 100%;
-  transition: all .5s linear; }
+  transition: all 0.5s linear; }
 
 .rightwindow.active2 {
-  transition: all .4s linear;
+  transition: all 0.4s linear;
   width: 85%;
   margin-left: 15%;
   /* border: 1px solid red; */ }
@@ -205,7 +205,7 @@ a:hover {
   clear: both; }
 
 .fancy-shadow-narrow::before {
-  content: '';
+  content: "";
   height: 10px;
   left: 0;
   right: 0;
@@ -260,7 +260,7 @@ nav .sidebar-wrapper {
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    background-color: #FFF;
+    background-color: #fff;
     color: rgba(0, 0, 0, 0.9);
     float: left;
     text-transform: uppercase;
@@ -301,13 +301,13 @@ nav .sidebar-wrapper {
         position: absolute;
         margin-left: -130px;
         font-size: 1.9vmin;
-        margin-top: .3em;
-        padding-left: .5em; }
+        margin-top: 0.3em;
+        padding-left: 0.5em; }
       nav .sidebar-wrapper #sidebar ul li span.portfolio-span {
         padding-left: 0; }
 
 nav .sidebar-wrapper.active1 {
-  transition: all .4s linear;
+  transition: all 0.4s linear;
   display: initial; }
 
 /* small screen navbar */
@@ -365,7 +365,7 @@ section#personal-skill.rightwindow .personal-skill {
   padding: 60px 0;
   padding: 30px;
   /* width: 100%; */
-  transition: all .3s linear; }
+  transition: all 0.3s linear; }
   section#personal-skill.rightwindow .personal-skill .personal-skill-body {
     padding-top: 30px; }
     section#personal-skill.rightwindow .personal-skill .personal-skill-body i {
@@ -414,7 +414,7 @@ section#portfolio.rightwindow {
           -moz-box-shadow: 0 10px 6px -6px #777;
           box-shadow: 0 30px 6px -76px #777; }
         section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-center p {
-          font-size: .8rem; }
+          font-size: 0.8rem; }
       section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-1 {
         position: relative; }
         section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-detail-1 .img-div1 {
@@ -441,7 +441,7 @@ section#portfolio.rightwindow {
             text-decoration: none;
             color: #fff; }
           section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div .portfolio-all-button i {
-            margin-left: .5em; }
+            margin-left: 0.5em; }
 
 /****************************** portfolio end*/
 section#aboutme {
@@ -449,7 +449,6 @@ section#aboutme {
   padding-left: 10px;
   padding-top: 60px; }
   section#aboutme .about-header {
-    /* border: 3px solid rgba(28,74,90, 0.7); */
     margin: 20px auto;
     text-align: center;
     text-transform: uppercase;
@@ -486,71 +485,48 @@ section#aboutme {
         border-bottom: none; }
 
 section#contact {
-  margin-bottom: 15px;
-  padding-left: 10px;
-  padding-top: 60px; }
-  section#contact .contact-background1 {
-    height: 420px;
-    position: relative; }
-    section#contact .contact-background1 .container-fluid {
-      margin: 0 !important;
-      padding: 0 !important; }
-      section#contact .contact-background1 .container-fluid .contact-bushra {
-        position: absolute;
-        top: 0;
-        left: 10%;
-        width: 80%;
-        height: 90%;
-        box-sizing: border-box;
-        border-radius: 20px;
-        margin: 1rem;
-        background-color: #fff; }
-        section#contact .contact-background1 .container-fluid .contact-bushra .contact-header {
-          /* border: 3px solid rgba(28,74,90, 0.7); */
-          margin: 20px auto;
-          text-align: center;
-          text-transform: uppercase;
-          font-weight: 700; }
-        section#contact .contact-background1 .container-fluid .contact-bushra .contact-bio {
-          z-index: 999;
-          background-color: #fff;
-          margin-bottom: 30px;
-          padding: 2rem 3rem;
-          color: #000;
-          box-shadow: 1px 1px 3px #444444;
-          border-bottom: 3px solid rgba(28, 74, 90, 0.7); }
-
-@media (max-width: 756px) {
-  #banner {
-    background: url("../images/banner-small.png") no-repeat fixed; }
-  .navbar {
-    display: none; }
-  .smallnavbar {
-    display: initial;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out; } }
-
-/* media query end here for small screen */
-/*// Small devices (landscape phones, 576px and up)*/
-@media (min-width: 756px) {
-  .sidebar-navbar-toggle-button,
-  .top-nav-collapse {
-    background-color: #1c4a5a;
-    box-shadow: 2px 2px 5px #444444; }
-  .sidebar-navbar-toggle-button {
-    display: none; }
-  .toggle-button-div {
-    display: none; }
-  .rightwindow.active2 {
+  height: 400px;
+  margin-top: 200px;
+  position: relative; }
+  section#contact .gradient-contact {
+    background: #999955;
+    background-image: linear-gradient(#dab046 20%, #d73b25 20%, #d73b25 40%, #c71b25 40% 60%, #961a39 60% 80%, #601035 80% 100%);
     width: 100%;
-    margin-left: 0 !important; }
-  .sidebar-toggle-button {
-    display: none; }
-  nav {
-    display: none; } }
+    margin: 0 auto;
+    height: 200px; }
+  section#contact .gradient-after {
+    position: absolute;
+    background: #ccdfcb;
+    left: 15%;
+    border-radius: 5px;
+    height: 400px;
+    top: -100px;
+    width: 70%;
+    z-index: -1; }
+  section#contact .card-bushra {
+    color: #1c4a5a;
+    position: absolute;
+    width: 60%;
+    height: 350px;
+    padding: 23px 15px;
+    left: 20%;
+    top: -80px;
+    background: #ccdfcb;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: -20px 0 35px -25px black, -20px 0 35px -25px black;
+    word-wrap: break-word; }
+    section#contact .card-bushra div {
+      margin: 0 auto; }
+    section#contact .card-bushra h1 {
+      margin-bottom: 2rem;
+      text-align: center;
+      text-transform: capitalize; }
+      section#contact .card-bushra h1::after {
+        margin-top: 1rem; }
+      section#contact .card-bushra h1 a {
+        text-decoration: none; }
 
-/* media query end here for large screen */
 #footer-section .container-fluid {
   margin: 0px;
   padding: 0px; }
@@ -575,7 +551,7 @@ section#contact {
       background-color: #ccdfcb;
       z-index: 1; }
     #footer-section .container-fluid .footer-banner .footer-bgcolor {
-      background-color: #325C6A;
+      background-color: #325c6a;
       width: 100%;
       height: 100%; }
       #footer-section .container-fluid .footer-banner .footer-bgcolor .footer-detail {
@@ -590,6 +566,37 @@ section#contact {
       text-align: center;
       background-color: #fff; }
 
+@media (max-width: 756px) {
+  #banner {
+    background: url("../images/banner-small.png") no-repeat fixed; }
+  .navbar {
+    display: none; }
+  .smallnavbar {
+    display: initial;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; } }
+
+/* media query end here for small screen */
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 756px) {
+  .sidebar-navbar-toggle-button,
+  .top-nav-collapse {
+    background-color: #1c4a5a;
+    box-shadow: 2px 2px 5px #444444; }
+  .sidebar-navbar-toggle-button {
+    display: none; }
+  .toggle-button-div {
+    display: none; }
+  .rightwindow.active2 {
+    width: 100%;
+    margin-left: 0 !important; }
+  .sidebar-toggle-button {
+    display: none; }
+  nav {
+    display: none; } }
+
+/* media query end here for large screen */
 @media screen and (max-width: 576px) {
   :root {
     font-size: 14px; } }
