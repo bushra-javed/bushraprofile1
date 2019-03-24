@@ -123,7 +123,7 @@ ul {
 .section-padding {
   padding: 30px 0; }
 
-.line-under-heading, section#portfolio.rightwindow .portfolio-bg-color .portfolio-header .inner-header::after, section#aboutme .about-header::after, section#contact .card-bushra h1::after {
+.line-under-heading, section#portfolio.rightwindow .portfolio-bg-color .portfolio-header .inner-header::after, section#aboutme .about-header::after, section#contact .contact .card-bushra h1::after {
   content: "";
   width: 200px;
   background-color: #EA6045;
@@ -178,7 +178,7 @@ ul {
 [type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
   border: 1px solid #1565c0; }
 
-.v-a, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div, section#contact .card-bushra div {
+.v-a, section#portfolio.rightwindow .portfolio-bg-color .portfolio-detail .portfolio-text-div1 div, section#contact .contact .card-bushra div {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
@@ -485,47 +485,49 @@ section#aboutme {
         border-bottom: none; }
 
 section#contact {
-  height: 400px;
-  margin-top: 200px;
-  position: relative; }
-  section#contact .gradient-contact {
-    background: #999955;
-    background-image: linear-gradient(#dab046 20%, #d73b25 20%, #d73b25 40%, #c71b25 40% 60%, #961a39 60% 80%, #601035 80% 100%);
-    width: 100%;
-    margin: 0 auto;
-    height: 200px; }
-  section#contact .gradient-after {
-    position: absolute;
-    background: #ccdfcb;
-    left: 15%;
-    border-radius: 5px;
+  padding-top: 60px; }
+  section#contact .contact {
     height: 400px;
-    top: -100px;
-    width: 70%;
-    z-index: -1; }
-  section#contact .card-bushra {
-    color: #1c4a5a;
-    position: absolute;
-    width: 60%;
-    height: 350px;
-    padding: 23px 15px;
-    left: 20%;
-    top: -80px;
-    background: #ccdfcb;
-    box-sizing: border-box;
-    border-radius: 5px;
-    box-shadow: -20px 0 35px -25px black, -20px 0 35px -25px black;
-    word-wrap: break-word; }
-    section#contact .card-bushra div {
-      margin: 0 auto; }
-    section#contact .card-bushra h1 {
-      margin-bottom: 2rem;
-      text-align: center;
-      text-transform: capitalize; }
-      section#contact .card-bushra h1::after {
-        margin-top: 1rem; }
-      section#contact .card-bushra h1 a {
-        text-decoration: none; }
+    margin-top: 200px;
+    position: relative; }
+    section#contact .contact .gradient-contact {
+      background: #999955;
+      background-image: linear-gradient(#dab046 20%, #f82206 20% 40%, #c71b25 40% 60%, #961a39 60% 80%, #601035 80% 100%);
+      width: 100%;
+      margin: 0 auto;
+      height: 200px; }
+    section#contact .contact .gradient-after {
+      position: absolute;
+      background: #ccdfcb;
+      left: 15%;
+      border-radius: 5px;
+      height: 400px;
+      top: -100px;
+      width: 70%;
+      z-index: -1; }
+    section#contact .contact .card-bushra {
+      color: #1c4a5a;
+      position: absolute;
+      width: 60%;
+      height: 350px;
+      padding: 23px 15px;
+      left: 20%;
+      top: -80px;
+      background: #ccdfcb;
+      box-sizing: border-box;
+      border-radius: 5px;
+      box-shadow: -20px 0 35px -25px black, -20px 0 35px -25px black;
+      word-wrap: break-word; }
+      section#contact .contact .card-bushra div {
+        margin: 0 auto; }
+      section#contact .contact .card-bushra h1 {
+        margin-bottom: 2rem;
+        text-align: center;
+        text-transform: capitalize; }
+        section#contact .contact .card-bushra h1::after {
+          margin-top: 1rem; }
+        section#contact .contact .card-bushra h1 a {
+          text-decoration: none; }
 
 #footer-section .container-fluid {
   margin: 0px;
