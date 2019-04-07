@@ -568,6 +568,26 @@ section#contact {
       text-align: center;
       background-color: #fff; }
 
+.carousel-button {
+  text-align: center; }
+  .carousel-button .res-img {
+    height: 700px;
+    width: 70%;
+    margin-right: 10px;
+    box-shadow: 1px 4px 4px #444; }
+
+.carousel-control-next {
+  color: #000;
+  font-size: 40px; }
+  .carousel-control-next:hover {
+    color: #000; }
+
+.carousel-control-prev {
+  color: #000;
+  font-size: 40px; }
+  .carousel-control-prev:hover {
+    color: #000; }
+
 @media (max-width: 756px) {
   #banner {
     background: url("../images/banner-small.png") no-repeat fixed; }
