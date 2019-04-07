@@ -684,6 +684,58 @@ section#contact {
   }
 }
 
+
+
+// responsive-code
+
+// .carousel-title-banner1,
+// .carousel-title-banner2,
+.carousel-title-banner3 {
+
+  // background-image: url("../images/compass-full.png");
+  // height: 1400px;
+  // width: 100%;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+
+}
+
+
+.carousel-button {
+  text-align: center;
+
+  .res-img {
+    height: 700px;
+    width: 70%;
+    margin-right: 10px;
+    box-shadow: 1px 4px 4px #444;
+  }
+
+}
+
+
+.carousel-control-next {
+  color: #000;
+  font-size: 40px;
+
+  &:hover {
+    color: #000;
+
+  }
+
+}
+
+.carousel-control-prev {
+  color: #000;
+  font-size: 40px;
+
+  &:hover {
+    color: #000;
+
+  }
+
+}
+
 // footer end
 @media (max-width: 756px) {
   #banner {
